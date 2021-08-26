@@ -1,3 +1,0 @@
-# Creating an IAM user
-
-
