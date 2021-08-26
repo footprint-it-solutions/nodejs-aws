@@ -52,8 +52,7 @@ The application listens on http://localhost:8080 - the command to start the app 
             "Effect": "Allow",
             "Action": [
                 "s3:Get*",
-                "s3:List*",
-                "s3:Put*"
+                "s3:List*"
             ],
             "Resource": "arn:aws:s3:::bucketName/*"
         },
@@ -62,7 +61,7 @@ The application listens on http://localhost:8080 - the command to start the app 
             "Action": [
                 "s3:Put*"
             ],
-            "Resource": "arn:aws:s3:::bucketName/folderName/*"
+            "Resource": "arn:aws:s3:::bucketName/optionalFolderName/*"
         }
     ]
 }
