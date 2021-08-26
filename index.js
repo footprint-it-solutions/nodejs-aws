@@ -110,7 +110,7 @@ app.post('/upload-images', async (req, res) => {
 app.get('/presigned-images/:imageId', (req, res) => {
 
   var params = {
-    Bucket: 'test-bucket-100821',
+    Bucket: 'bucketName',
     Key: req.params.imageId
   };
 
@@ -128,6 +128,9 @@ app.get('/presigned-images/:imageId', (req, res) => {
   res.send(html)
 })
 
+// Using GET Method to generate a one time pre-signed URL
+// The pre-signed URL can then be used with PUT method
+//  to be used for secure upload of objects to S3 bucket
 app.get('/upload-presigned-images/:imageId', (req, res) => {
   var params = {
     Bucket: 'bucketName',
