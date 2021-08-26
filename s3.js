@@ -31,7 +31,7 @@ var awsConfig = {
 
 let s3 = new AWS.S3(awsConfig);
 
-//Route to access images as a stream
+// Route to access images as a stream
 app.get('/images/:imageId', (req, res) => {
   // Declare asnyc funtion
   async function getImage() {
@@ -66,7 +66,7 @@ app.get('/images/:imageId', (req, res) => {
     })
 })
 
-// Upload the image using POST to S3 bucket
+// Upload the image to S3 via a POST to the application
 app.post('/upload-images', async (req, res) => {
   try {
     if (!req.files) {
@@ -115,12 +115,12 @@ app.get('/presigned-images/:imageId', (req, res) => {
   };
 
   // Invoke S3 API to get presigned URL
-  // The application authenticates on behalf of the client 
+  // The application authenticates on behalf of the client
   // otherwise the client will get access denied
   var url = s3.getSignedUrl('getObject', params);
   console.log('The URL is', url);
 
-  // The 
+  // The
   let image = "<img src='" + url + "'>";
   let startHTML = "<html><body>";
   let endHTML = "</body></html>";
@@ -140,7 +140,7 @@ app.get('/upload-presigned-images/:imageId', (req, res) => {
   };
 
   // Invoke S3 API to get presigned URL
-  // The application authenticates on behalf of the client 
+  // The application authenticates on behalf of the client
   // otherwise the client will get access denied
   var url = s3.getSignedUrl('putObject', params);
   console.log('The URL is', url);
