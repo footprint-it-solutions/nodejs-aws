@@ -1,7 +1,7 @@
 # Node.JS AWS Software Development Kit (SDK) Demo
 
 ## Files:
-* s3.js - Sample application using Express to expose routes.
+* s3.js - Sample application using Express to expose routes that use the S3 APIs server-side.
 
 ### Credentials
 
