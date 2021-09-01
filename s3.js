@@ -24,8 +24,8 @@ app.listen(PORT, () => {
 
 // The IAM user credentials used to access the S3 bucket
 var awsConfig = {
-  accessKeyId: 'accessKey',
-  secretAccessKey: 'secretKey',
+  // accessKeyId: 'accessKey',
+  // secretAccessKey: 'secretKey',
   region: 'eu-west-1'
 };
 
