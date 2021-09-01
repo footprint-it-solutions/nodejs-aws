@@ -5,5 +5,23 @@
     "express": "^4.17.1",
     "express-fileupload": "^1.2.1",
     "morgan": "^1.10.0"
-  }
+  },
+  "name": "nodejs-aws",
+  "description": "## Files: * s3.js - Sample application using Express to expose routes that use the S3 APIs server-side.",
+  "version": "1.0.0",
+  "main": "s3.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/footprintmediaits/nodejs-aws.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/footprintmediaits/nodejs-aws/issues"
+  },
+  "homepage": "https://github.com/footprintmediaits/nodejs-aws#readme"
 }

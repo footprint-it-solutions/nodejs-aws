@@ -5,7 +5,7 @@ const fileUpload = require('express-fileupload');
 const fs = require('fs')
 const morgan = require('morgan');
 const { callbackify } = require('util');
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 80;
 const app = express();
 
 // Enable files upload
