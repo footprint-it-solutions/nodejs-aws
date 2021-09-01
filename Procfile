@@ -1,1 +1,1 @@
-web: npm start
+web: node s3.js
