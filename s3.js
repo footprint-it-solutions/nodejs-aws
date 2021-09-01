@@ -31,6 +31,11 @@ var awsConfig = {
 
 let s3 = new AWS.S3(awsConfig);
 
+// ELB Health check URL
+app.get('/health', (req, res) => {
+  res.send("App is running!")
+})
+
 // Route to access images as a stream
 app.get('/images/:imageId', (req, res) => {
   // Declare asnyc funtion
