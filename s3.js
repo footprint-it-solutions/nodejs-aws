@@ -43,7 +43,7 @@ app.get('/images/:imageId', (req, res) => {
     const data = s3.getObject(
       {
         // S3 bucket name
-        Bucket: 'bucketName',
+        Bucket: 'test-bucket-100821',
         // S3 Object Key
         Key: "images/" + req.params.imageId
       }
@@ -84,7 +84,7 @@ app.post('/upload-images', async (req, res) => {
       let upload = req.files.upload;
       var params = {
         // S3 bucket name
-        Bucket: 'bucketName',
+        Bucket: 'test-bucket-100821',
         // S3 object key which is used to place the file in upload directory (ie "uploads")
         Key: "uploads/" + upload.name,
         Body: upload.data
@@ -115,7 +115,7 @@ app.post('/upload-images', async (req, res) => {
 app.get('/presigned-images/:imageId', (req, res) => {
 
   var params = {
-    Bucket: 'bucketName',
+    Bucket: 'test-bucket-100821',
     Key: req.params.imageId
   };
 
@@ -138,7 +138,7 @@ app.get('/presigned-images/:imageId', (req, res) => {
 //  to be used for secure upload of objects to S3 bucket
 app.get('/upload-presigned-images/:imageId', (req, res) => {
   var params = {
-    Bucket: 'bucketName',
+    Bucket: 'test-bucket-100821',
     Key: req.params.imageId,
     // Presigned url is only valid for 100 seconds
     Expires: 100
