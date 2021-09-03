@@ -141,7 +141,7 @@ app.get('/upload-presigned-images/:imageId', (req, res) => {
     Bucket: 'test-bucket-100821',
     Key: req.params.imageId,
     // Presigned url is only valid for 100 seconds
-    Expires: 100
+    // Expires: 100
   };
 
   // Invoke S3 API to get presigned URL
