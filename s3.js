@@ -5,7 +5,7 @@ const fileUpload = require('express-fileupload');
 const fs = require('fs')
 const morgan = require('morgan');
 const { callbackify } = require('util');
-const PORT = process.env.PORT || 80;
+const PORT = process.env.PORT || 8080;
 const app = express();
 
 // Enable files upload
@@ -30,6 +30,52 @@ var awsConfig = {
 };
 
 let s3 = new AWS.S3(awsConfig);
+
+// Create a Secrets Manager client
+let sm = new AWS.SecretsManager({
+  region: 'eu-west-1'
+});
+
+let secret;
+let decodedBinarySecret;
+var obj;
+
+sm.getSecretValue({ SecretId: "foo" }, function (err, data) {
+  if (err) {
+    if (err.code === 'DecryptionFailureException')
+      // Secrets Manager can't decrypt the protected secret text using the provided KMS key.
+      // Deal with the exception here, and/or rethrow at your discretion.
+      throw err;
+    else if (err.code === 'InternalServiceErrorException')
+      // An error occurred on the server side.
+      // Deal with the exception here, and/or rethrow at your discretion.
+      throw err;
+    else if (err.code === 'InvalidParameterException')
+      // You provided an invalid value for a parameter.
+      // Deal with the exception here, and/or rethrow at your discretion.
+      throw err;
+    else if (err.code === 'InvalidRequestException')
+      // You provided a parameter value that is not valid for the current state of the resource.
+      // Deal with the exception here, and/or rethrow at your discretion.
+      throw err;
+    else if (err.code === 'ResourceNotFoundException')
+      // We can't find the resource that you asked for.
+      // Deal with the exception here, and/or rethrow at your discretion.
+      throw err;
+  }
+  else {
+    // Decrypts secret using the associated KMS CMK.
+    // Depending on whether the secret is a string or binary, one of these fields will be populated.
+    if ('SecretString' in data) {
+      secret = data.SecretString;
+    } else {
+      let buff = new Buffer(data.SecretBinary, 'base64');
+      decodedBinarySecret = buff.toString('ascii');
+    }
+  }
+  obj = JSON.parse(secret)
+  console.log("Secret value for foo is " + obj.foo)
+});
 
 // ELB Health check URL
 app.get('/health', (req, res) => {
