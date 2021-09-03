@@ -79,3 +79,13 @@ The application listens on http://localhost:8080 - the command to start the app 
 * https://aws.amazon.com/s3/
 * https://aws.amazon.com/iam/
 * https://aws.amazon.com/sdk-for-javascript/
+
+# AWS Elastic Beanstalk
+
+Elastic Beanstalk is a platform within AWS that is used for deploying and scaling web applications. In simple terms this platform as a service (PaaS) takes your application code and deploys it while provisioning the supporting architecture and compute resources required for your code to run. Elastic Beanstalk also fully manages the patching and security updates for those provisioned resources. There is no charge to use Elastic Beanstalk to deploy your applications, you are only charged for the resources that are created to support your application, such as the EC2 instance(s) and the Elastic Load Balancer.
+
+## Installing EB CLI
+
+Follow this link to install https://github.com/aws/aws-elastic-beanstalk-cli-setup
+
+
