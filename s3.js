@@ -187,7 +187,7 @@ app.get('/presigned-images/:imageId', (req, res) => {
 app.get('/upload-presigned-images/:imageId', (req, res) => {
   var params = {
     Bucket: 'test-bucket-100821',
-    Key: req.params.imageId,
+    Key: "uploads/" + req.params.imageId,
     // Presigned url is only valid for 100 seconds
     // Expires: 100
   };
