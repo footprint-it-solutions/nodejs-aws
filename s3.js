@@ -196,5 +196,8 @@ app.get('/upload-presigned-images/:imageId', (req, res) => {
   // The application authenticates on behalf of the client
   // otherwise the client will get access denied
   var url = s3.getSignedUrl('putObject', params);
-  console.log('The URL is', url);
+  let startHTML = "<html><body>";
+  let endHTML = "</body></html>";
+  let html = startHTML + url + endHTML;
+  res.send(html)
 })
