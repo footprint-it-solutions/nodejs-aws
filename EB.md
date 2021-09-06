@@ -41,7 +41,7 @@ nodejs-aws
 ```
 
 There are two ways to deploy an application, this is through the CLI or in the console.
-### Creating the Elastic Beanstalk App using the CLI
+## Creating the Elastic Beanstalk App using the CLI
 
 First, initialise our Node project as an EB project. For this we’ll use the `eb init` command.Follow the prompts using the options.
 
@@ -104,7 +104,7 @@ Select a platform branch.
 (default is 1): 1
 ```
 
-### Creating the Elastic Beanstalk Environment
+## Creating the Elastic Beanstalk Environment
 
 In order to create our first environment we’ll use the `eb create` command. Again, follow the prompt using all the default options for now:
 
@@ -141,5 +141,3 @@ Environment details for: nodejs-dev
 After creating the EB app and environment, notice that there is a new directory in the root of you Node project called `.elasticbeanstalk`. This directory contains a YML file with the deployment configuration and looks like this:
 
 ![](https://i.imgur.com/wNFeY10.png)
-
-
