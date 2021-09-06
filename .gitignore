@@ -26,6 +26,8 @@ package-lock.json
 
 node_modules
 
+*.env
+
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml

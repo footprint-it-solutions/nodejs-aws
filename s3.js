@@ -1,5 +1,6 @@
 const AWS = require('aws-sdk');
 const cors = require('cors');
+const dotenv = require('dotenv');
 const express = require('express');
 const fileUpload = require('express-fileupload');
 const fs = require('fs')
@@ -22,10 +23,11 @@ app.listen(PORT, () => {
   console.log(`Web Server running on port ${PORT}`);
 });
 
+dotenv.config();
 // The IAM user credentials used to access the S3 bucket
 var awsConfig = {
-  // accessKeyId: 'accessKey',
-  // secretAccessKey: 'secretKey',
+  accessKeyId: process.env.ACCESS_KEY,
+  secretAccessKey: process.env.SECRET_KEY,
   region: 'eu-west-1'
 };
 
