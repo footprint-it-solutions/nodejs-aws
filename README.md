@@ -19,24 +19,20 @@ The application listens on http://localhost:8080 - the command to start the app 
 
 #### GET /presigned-images/:imageId
 
-#### GET /upload-presigned-images/:imageId
+#### PUT /upload-presigned-images/:imageId
 
+### Prerequisites for setting up Elastic Beanstalk
 
-## Creating S3 Bucket
+1. [S3 Bucket](https://github.com/footprintmediaits/nodejs-aws/blob/main/S3.md)
 
-* Sign in to the AWS Management Console and open the Amazon S3 console.
+2. [IAM User and Policy](https://github.com/footprintmediaits/nodejs-aws/blob/main/IAM.md)
 
-* Choose Create bucket.
+3. [Certificate Manager](https://github.com/footprintmediaits/nodejs-aws/blob/main/ACM.md)
 
-* In Bucket name, enter a DNS-compliant name for your bucket.
+4. [Route53](https://github.com/footprintmediaits/nodejs-aws/blob/main/Route53.md)
 
-* In Region, choose the AWS Region where you want the bucket to reside.
-
-* By default the block all Public Access for the bucket is selected. Leave this on default.
-
-* Choose Create bucket.
+### Deploying the application in [Elastic Beanstalk](https://github.com/footprintmediaits/nodejs-aws/blob/main/EB.md)
 
 ## Further reading
 
-* https://aws.amazon.com/s3/
 * https://aws.amazon.com/sdk-for-javascript/

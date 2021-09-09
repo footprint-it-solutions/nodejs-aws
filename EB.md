@@ -46,7 +46,7 @@ There are two ways to deploy an application, this is through the CLI or in the c
 First, initialise our Node project as an EB project. For this we’ll use the `eb init` command.Follow the prompts using the options.
 
 ```
-eb init                
+eb init
 
 Select a default region
 1) us-east-1 : US East (N. Virginia)
@@ -109,17 +109,17 @@ Select a platform branch.
 In order to create our first environment we’ll use the `eb create` command. Again, follow the prompt using all the default options for now:
 
 ```
-eb create 
+eb create
 Enter Environment Name
-(default is nodejs-dev): 
+(default is nodejs-dev):
 Enter DNS CNAME prefix
-(default is nodejs-dev): 
+(default is nodejs-dev):
 
 Select a load balancer type
 1) classic
 2) application
 3) network
-(default is 2): 
+(default is 2):
 
 
 Would you like to enable Spot Fleet requests for this environment? (y/N): N

@@ -57,7 +57,7 @@ AWS Identity and Access Management (IAM) is a web service that helps you securel
 
 4. Choose the JSON tab.
 
-5. Type or paste a JSON policy document. Below is an example policy. The example policy has three parts. First, it can only list the specific bucket. Secondly, it can list, read , and write inside the bucket. Lastly, it can write to a specific folder.
+5. Type or paste a JSON policy document. Below is an example policy. The example policy has three parts. First, it can only list the specific bucket. Secondly, it can list, read, and write inside the bucket. Lastly, it can write to a specific folder.
 
 ```
 {
