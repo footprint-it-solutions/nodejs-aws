@@ -141,3 +141,51 @@ Environment details for: nodejs-dev
 After creating the EB app and environment, notice that there is a new directory in the root of you Node project called `.elasticbeanstalk`. This directory contains a YML file with the deployment configuration and looks like this:
 
 ![](https://i.imgur.com/wNFeY10.png)
+
+## Creating the Elastic Beanstalk App using the Console
+
+### Creating the Application
+
+1. Open the Elastic [Beanstalk console](https://console.aws.amazon.com/elasticbeanstalk/home#).
+
+2. Choose <strong>Applications</strong>.
+
+3. Click on <strong>Create a new application</strong>.
+
+4. Fill out the application information and then clink on <strong>Create</strong>.
+
+### Creating the the Environment
+
+1. Open the Elastic [Beanstalk console](https://console.aws.amazon.com/elasticbeanstalk/home#).
+
+2. Choose <strong>Environments</strong>.
+
+3. Click on <strong>Create a new environment</strong>.
+
+4. Select the environment tier.
+
+* Amazon Elastic Beanstalk has two types of environment tiers to support different types of web applications. Web servers are standard applications that listen for and then process HTTP requests, typically over port 80. Workers are specialized applications that have a background processing task that listens for messages on an Amazon SQS queue. Worker applications post those messages to your application by using HTTP. 
+
+5. Fill out the Environment information
+
+* Name – Enter a name for the environment. The form provides a generated name.
+
+* Domain – (web server environments) Enter a unique domain name for your environment. The default name is the environment's name. You can enter a different domain name. Elastic Beanstalk uses this name to create a unique CNAME for the environment. To check whether the domain name you want is available, choose Check Availability.
+
+* Description – Enter a description for this environment.
+
+6. Select a platform for the new environment.
+
+* You can create a new environment from two types of platforms, Managed platform or Custom platform.
+
+* Select a platform, a platform branch within that platform, and a specific platform version in the branch. When you select a platform branch, the recommended version within the branch is selected by default. In addition, you can select any platform version you've used before. 
+
+7. Provide the application code.
+
+* Use the sample application that Elastic Beanstalk provides for each platform.
+
+* Use an application code that is already deployed to Elastic Beanstalk. Choose Existing version and the application in the Application code section.
+
+* Upload a new code. Choose Upload your code, and then choose Upload. You can upload new application code from a local file, or you can specify the URL for the Amazon S3 bucket that contains your application code. 
+
+8. Click on <strong>Create environment</strong>
