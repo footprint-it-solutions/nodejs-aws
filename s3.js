@@ -207,8 +207,7 @@ AWS.config.update({
 });
 
 let docClient = new AWS.DynamoDB.DocumentClient();
-app.route('/event/:eventId'), (req, res) => {
-
+app.get('/event/:eventId', (req, res) => {
   console.log("Querying for IDs");
 
   var params = {
@@ -238,4 +237,4 @@ app.route('/event/:eventId'), (req, res) => {
           res.send(html)
       }
   });
-}
+});
