@@ -5,6 +5,7 @@ const express = require('express');
 const fileUpload = require('express-fileupload');
 const fs = require('fs')
 const morgan = require('morgan');
+const { eventNames } = require('process');
 const { callbackify } = require('util');
 const PORT = process.env.PORT || 8080;
 const app = express();
@@ -230,10 +231,9 @@ app.get('/event/:eventId', (req, res) => {
           data.Items.forEach(function(item) {
               console.log(" -", item.EventName);
           });
-          var query = docClient.query(params);
           let startHTML = "<html><body>";
           let endHTML = "</body></html>";
-          let html = startHTML + query + endHTML;
+          let html = startHTML + data.Items[0].EventName + endHTML;
           res.send(html)
       }
   });
