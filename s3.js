@@ -213,10 +213,7 @@ app.get('/event/:eventId', (req, res) => {
 
   var params = {
       TableName : "events",
-      KeyConditionExpression: "#id = :id",
-      ExpressionAttributeNames:{
-        "#id": "id"
-      },
+      KeyConditionExpression: "id = :id",
       ExpressionAttributeValues: {
         ":id": req.params.eventId
       },
