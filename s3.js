@@ -201,3 +201,41 @@ app.get('/upload-presigned-images/:imageId', (req, res) => {
   let html = startHTML + url + endHTML;
   res.send(html)
 })
+
+AWS.config.update({
+  region: "eu-west-1"
+});
+
+let docClient = new AWS.DynamoDB.DocumentClient();
+app.route('/event/:eventId'), (req, res) => {
+
+  console.log("Querying for IDs");
+
+  var params = {
+      TableName : "events",
+      KeyConditionExpression: "#id = :id",
+      ExpressionAttributeNames:{
+        "#id": "id"
+      },
+      ExpressionAttributeValues: {
+        ":id": "f6698c79-bf28-49ec-945b-b9c9169a4537"
+      },
+      ProjectionExpression: "EventName"
+  };
+
+  docClient.query(params, function(err, data) {
+      if (err) {
+          console.error("Unable to query. Error:", JSON.stringify(err, null, 2));
+      } else {
+          console.log("Query succeeded.");
+          data.Items.forEach(function(item) {
+              console.log(" -", item.EventName);
+          });
+          var url = docClient.query(params);
+          let startHTML = "<html><body>";
+          let endHTML = "</body></html>";
+          let html = startHTML + url + endHTML;
+          res.send(html)
+      }
+  });
+}
