@@ -236,7 +236,7 @@ app.get('/event/:eventId', (req, res) => {
   });
 });
 
-// Create items in the Table
+// Create items in the table
 app.put('/create-event-item', (req, res) =>{
   console.log("Creating new item");
 
@@ -257,3 +257,28 @@ app.put('/create-event-item', (req, res) =>{
   });
 });
 
+// Update items in the table
+app.put('/update-event-item', (req, res) =>{
+  console.log("Updating item");
+
+  var params = {
+      TableName : "events",
+      Key: {
+        "id": 1,
+        "EventName": "Test"
+      },
+      UpdateExpression: " ",
+      ExpressionAttributeValues:{
+
+    },
+      ReturnValues:"UPDATED_NEW"
+  };
+  console.log("Updating item...");
+  docClient.put(params, function(err, data) {
+      if (err) {
+          console.error("Unable to update item. Error JSON:", JSON.stringify(err, null, 2));
+      } else {
+          console.log("Successfully updated item:", JSON.stringify(data, null, 2));
+      }
+  });
+});
