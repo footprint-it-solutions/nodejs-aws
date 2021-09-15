@@ -218,7 +218,7 @@ app.route('/event/:eventId'), (req, res) => {
         "#id": "id"
       },
       ExpressionAttributeValues: {
-        ":id": "f6698c79-bf28-49ec-945b-b9c9169a4537"
+        ":id": req.params.eventId
       },
       ProjectionExpression: "EventName"
   };
@@ -231,10 +231,10 @@ app.route('/event/:eventId'), (req, res) => {
           data.Items.forEach(function(item) {
               console.log(" -", item.EventName);
           });
-          var url = docClient.query(params);
+          var query = docClient.query(params);
           let startHTML = "<html><body>";
           let endHTML = "</body></html>";
-          let html = startHTML + url + endHTML;
+          let html = startHTML + query + endHTML;
           res.send(html)
       }
   });
