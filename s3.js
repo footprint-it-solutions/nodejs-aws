@@ -208,6 +208,36 @@ AWS.config.update({
 });
 
 let docClient = new AWS.DynamoDB.DocumentClient();
+// Retrieve whole document
+app.get('/document/:eventId', (req, res) => {
+  console.log("Querying for IDs");
+
+  var params = {
+      TableName : "events",
+      KeyConditionExpression: "id = :id",
+      ExpressionAttributeValues: {
+        ":id": req.params.eventId
+      }
+  };
+
+  docClient.query(params, function(err, data) {
+      if (err) {
+          console.error("Unable to query. Error:", JSON.stringify(err, null, 2));
+      } else {
+          console.log("Query succeeded.");
+          data.Items.forEach(function(item) {
+              console.log(" -", item.EventName);
+          });
+          let startHTML = "<html><body>";
+          let endHTML = "</body></html>";
+          let html = startHTML + data.Items[0].id + endHTML;
+          res.send(html)
+      }
+  });
+});
+
+
+// Retrieve selected elements of the document
 app.get('/event/:eventId', (req, res) => {
   console.log("Querying for IDs");
 
@@ -236,15 +266,22 @@ app.get('/event/:eventId', (req, res) => {
   });
 });
 
-// Create items in the table
+// Create a new document
 app.put('/create-event-item', (req, res) =>{
   console.log("Creating new item");
 
   var params = {
       TableName : "events",
       Item: {
-        "id": 1,
-        "EventName": "Test"
+        "id": "1",
+        "EventName": "Test",
+        "LayoutData": [
+          {
+          "SceneData": {
+            "setupTitle": "Enterprise Suite"
+          }
+        }
+       ]
       }
   };
   console.log("Adding a new item...");
@@ -257,21 +294,18 @@ app.put('/create-event-item', (req, res) =>{
   });
 });
 
-// Update items in the table
-app.put('/update-event-item', (req, res) =>{
+// Update an existing document
+app.post('/update-event-item', (req, res) =>{
   console.log("Updating item");
 
   var params = {
       TableName : "events",
-      Key: {
-        "id": 1,
+      Item: {
+        "id": "1",
         "EventName": "Test"
       },
-      UpdateExpression: " ",
-      ExpressionAttributeValues:{
-
-    },
-      ReturnValues:"UPDATED_NEW"
+      UpdateExpression: "LayoutData[0].SceneData.setupTitle = Basic Suite",
+      ReturnValues:"NONE"
   };
   console.log("Updating item...");
   docClient.put(params, function(err, data) {
@@ -282,3 +316,34 @@ app.put('/update-event-item', (req, res) =>{
       }
   });
 });
+
+// Delete the whole document
+app.post('/delete-event-item', (req, res)=>{
+  console.log("Deleting item");
+
+  var params = {
+      TableName : "events",
+      Key: {
+        "id": "1",
+        "EventName": "Test",
+        "LayoutData": [
+          {
+          "SceneData": {
+            "setupTitle": "Enterprise Suite"
+          }
+        }
+       ]
+      }
+  };
+
+  console.log("Attempting to delete the whole document...");
+  docClient.delete(params, function(err, data) {
+    if (err) {
+        console.error("Unable to delete the document. Error JSON:", JSON.stringify(err, null, 2));
+    } else {
+        console.log("Delete document succeeded:", JSON.stringify(data, null, 2));
+    }
+  });
+});
+
+
