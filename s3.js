@@ -207,6 +207,10 @@ AWS.config.update({
   region: "eu-west-1"
 });
 
+/*
+ Start of DynamoDB code
+*/
+
 let docClient = new AWS.DynamoDB.DocumentClient();
 // Retrieve whole document
 app.get('/document/:eventId', (req, res) => {
