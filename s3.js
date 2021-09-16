@@ -7,6 +7,9 @@ const fs = require('fs')
 const morgan = require('morgan');
 const { eventNames } = require('process');
 const { callbackify } = require('util');
+const {
+  v4: uuidv4,
+} = require('uuid');
 const PORT = process.env.PORT || 8080;
 const app = express();
 
@@ -213,7 +216,7 @@ AWS.config.update({
 
 let docClient = new AWS.DynamoDB.DocumentClient();
 // Retrieve whole document
-app.get('/document/:eventId', (req, res) => {
+app.get('/event/:eventId', (req, res) => {
   console.log("Querying for IDs");
 
   var params = {
@@ -242,7 +245,7 @@ app.get('/document/:eventId', (req, res) => {
 
 
 // Retrieve selected elements of the document
-app.get('/event/:eventId', (req, res) => {
+app.get('/event-name/:eventId', (req, res) => {
   console.log("Querying for IDs");
 
   var params = {
@@ -271,22 +274,16 @@ app.get('/event/:eventId', (req, res) => {
 });
 
 // Create a new document
-app.put('/create-event-item', (req, res) =>{
-  console.log("Creating new item");
+app.post('/create-event', (req, res) =>{
+  console.log("Creating new event");
+
+  // merge document with the JSON document that has been posted
+  let event = req.files.event;
+  var document = extend({"id": uuidv4()}, JSON.parse(event.data))
 
   var params = {
       TableName : "events",
-      Item: {
-        "id": "1",
-        "EventName": "Test",
-        "LayoutData": [
-          {
-          "SceneData": {
-            "setupTitle": "Enterprise Suite"
-          }
-        }
-       ]
-      }
+      Item: document
   };
   console.log("Adding a new item...");
   docClient.put(params, function(err, data) {
@@ -299,8 +296,8 @@ app.put('/create-event-item', (req, res) =>{
 });
 
 // Update an existing document
-app.post('/update-event-item', (req, res) =>{
-  console.log("Updating item");
+app.post('/update-event', (req, res) =>{
+  console.log("Updating event");
 
   var params = {
       TableName : "events",
@@ -322,8 +319,8 @@ app.post('/update-event-item', (req, res) =>{
 });
 
 // Delete the whole document
-app.post('/delete-event-item', (req, res)=>{
-  console.log("Deleting item");
+app.post('/delete-event', (req, res)=>{
+  console.log("Deleting event");
 
   var params = {
       TableName : "events",
