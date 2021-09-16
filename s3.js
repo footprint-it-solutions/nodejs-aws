@@ -12,7 +12,8 @@ const {
 } = require('uuid');
 const PORT = process.env.PORT || 8080;
 const app = express();
-
+app.use(express.json({limit: '50mb'}));
+app.use(express.urlencoded({limit: '50mb', extended: true, parameterLimit: 50000}));
 // Enable files upload
 app.use(fileUpload({
   createParentPath: true
@@ -276,10 +277,12 @@ app.get('/event-name/:eventId', (req, res) => {
 // Create a new document
 app.post('/create-event', (req, res) =>{
   console.log("Creating new event");
-
+  
   // merge document with the JSON document that has been posted
-  let event = req.files.event;
-  var document = extend({"id": uuidv4()}, JSON.parse(event.data))
+  var document =  req.body
+  if (!("id" in document)){
+    document.id = uuidv4()
+  }
 
   var params = {
       TableName : "events",
@@ -289,8 +292,10 @@ app.post('/create-event', (req, res) =>{
   docClient.put(params, function(err, data) {
       if (err) {
           console.error("Unable to add item. Error JSON:", JSON.stringify(err, null, 2));
+          res.send("Failed")
       } else {
           console.log("Added item:", JSON.stringify(data, null, 2));
+          res.send("Success")
       }
   });
 });
@@ -301,19 +306,23 @@ app.post('/update-event', (req, res) =>{
 
   var params = {
       TableName : "events",
-      Item: {
-        "id": "1",
-        "EventName": "Test"
+      Key: {
+        "id": req.body.id
       },
-      UpdateExpression: "LayoutData[0].SceneData.setupTitle = Basic Suite",
+      UpdateExpression: "set " + req.body.UpdateExpression + " = :ld",
+      ExpressionAttributeValues:{
+       ":ld" : req.body.Value
+      },
       ReturnValues:"NONE"
   };
-  console.log("Updating item...");
-  docClient.put(params, function(err, data) {
+  console.log("Updating the item...");
+  docClient.update(params, function(err, data) {
       if (err) {
           console.error("Unable to update item. Error JSON:", JSON.stringify(err, null, 2));
+          res.send("Failed")
       } else {
           console.log("Successfully updated item:", JSON.stringify(data, null, 2));
+          res.send("Success")
       }
   });
 });
@@ -325,15 +334,7 @@ app.post('/delete-event', (req, res)=>{
   var params = {
       TableName : "events",
       Key: {
-        "id": "1",
-        "EventName": "Test",
-        "LayoutData": [
-          {
-          "SceneData": {
-            "setupTitle": "Enterprise Suite"
-          }
-        }
-       ]
+        "id": req.body.id
       }
   };
 
@@ -341,8 +342,10 @@ app.post('/delete-event', (req, res)=>{
   docClient.delete(params, function(err, data) {
     if (err) {
         console.error("Unable to delete the document. Error JSON:", JSON.stringify(err, null, 2));
+        res.send("Failed")
     } else {
         console.log("Delete document succeeded:", JSON.stringify(data, null, 2));
+        res.send("Success")
     }
   });
 });
