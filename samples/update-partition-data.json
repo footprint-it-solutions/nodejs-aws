@@ -1,10 +1,12 @@
 {
   "EventId": " ",
   "LayoutDataIndex": 0,
-  "partitionDataIndex": 0,
-  "partitionData": {
-    "PartitionOpen": true,
-    "PartitionClosed": true,
-    "PartitionToggle": false
-  }
+  "PartitionDataIndex": 0,
+  "PartitionDataArray": [
+    {
+      "PartitionOpen": "false",
+      "PartitionClosed": "false",
+      "PartitionToggle": "true"
+    }
+  ]
 }
