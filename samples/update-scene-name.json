@@ -1,7 +1,5 @@
 {
   "EventId": " ",
   "LayoutDataIndex": 0,
-  "SceneDataObject": {
-    "SceneName": "foo"
-    }
+  "SceneName": "foo"
 }

@@ -354,7 +354,7 @@ app.post('/update-sub-document', (req, res) =>{
   });
 });
 
-// Updates document attribute 
+// Updates document attribute
 app.post('/update-layout-name', (req, res) => {
   console.log("Updating attribute")
 
@@ -381,7 +381,7 @@ app.post('/update-layout-name', (req, res) => {
   });
 });
 
-// Updates document attribute 
+// Updates document attribute
 app.post('/update-scene-name', (req, res) => {
   console.log("Updating scene name")
 
@@ -390,9 +390,9 @@ app.post('/update-scene-name', (req, res) => {
     Key: {
      "id" : req.body.EventId
     },
-    UpdateExpression : "set LayoutData[" + req.body.LayoutDataIndex + "].SceneDataObject = :so",
+    UpdateExpression : "set LayoutData[" + req.body.LayoutDataIndex + "].SceneData.SceneName = :sn",
     ExpressionAttributeValues : {
-    ":so" : req.body.SceneDataObject
+    ":sn" : req.body.SceneName
     },
     ReturnValues : "NONE"
   };
