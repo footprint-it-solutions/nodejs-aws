@@ -1,0 +1,3452 @@
+{
+  "EventName": "TEST",
+  "ConnectionURL": "",
+  "CompanyName": "etc_venues",
+  "VenueName": "133 Testing",
+  "StartDate": "16/06/2021",
+  "LastUpdated": "14/06/2021",
+  "LayoutData": [
+    {
+      "LayoutName": "Engage 1",
+      "CurrentSceneName": "Engage",
+      "SceneNameSubtitle": "Engage\n<size=10%>\n<size=80%>level 2</size>",
+      "SceneAddress": "Assets/00_Main/Scenes/Rooms/133_Houndsditch/2nd/Engage.unity",
+      "SceneData": {
+        "ActiveSceneInfo": "EnterpriseSuite\n<size=10%>\n<size=80%>level 2</size>",
+        "SceneName": "EnterpriseSuite",
+        "setupTitle": "Enterprise Suite",
+        "setupSubTitle": "Setup Name",
+        "activeLogoName": "Logo - NUMBER2",
+        "floorplanCanvasScale": {
+          "x": 1.1399999856948853,
+          "y": 1.1399999856948853,
+          "z": 1.2000000476837158
+        },
+        "numberOfCreatedObjects": 5,
+        "SettingProperties": {
+          "PartitionCount": 1,
+          "partitionData": [
+            {
+              "PartitionOpen": true,
+              "PartitionClosed": true,
+              "PartitionToggle": false
+            }
+          ],
+          "ProjectorCount": 5,
+          "projectorData": [
+            {
+              "ImageVis": false,
+              "ProjectorToggle": false
+            },
+            {
+              "ImageVis": false,
+              "ProjectorToggle": false
+            },
+            {
+              "ImageVis": false,
+              "ProjectorToggle": false
+            },
+            {
+              "ImageVis": false,
+              "ProjectorToggle": false
+            },
+            {
+              "ImageVis": false,
+              "ProjectorToggle": false
+            }
+          ],
+          "isLogoVisibile": true,
+          "isDimensionVisible": true
+        },
+        "createdTextLabels": [
+          {
+            "Label_Name": "textLabel 01",
+            "Label_PreFabName": "textLabel",
+            "Label_Position": {
+              "x": -111.80000305175781,
+              "y": 259.70001220703125,
+              "z": 0
+            },
+            "Label_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Label_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "Label_WxH": {
+              "x": 74.72000122070312,
+              "y": 23.40999984741211,
+              "z": 0
+            },
+            "Label_TextInformation": "Enterprise 1",
+            "Label_TextAlignment": "Center",
+            "Label_TextSize": 12,
+            "Label_isBGActive": false
+          },
+          {
+            "Label_Name": "textLabel 02",
+            "Label_PreFabName": "textLabel",
+            "Label_Position": {
+              "x": 168.50006103515625,
+              "y": 259.7000427246094,
+              "z": 0
+            },
+            "Label_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Label_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "Label_WxH": {
+              "x": 74.72000122070312,
+              "y": 23.40999984741211,
+              "z": 0
+            },
+            "Label_TextInformation": "Enterprise 2",
+            "Label_TextAlignment": "Center",
+            "Label_TextSize": 12,
+            "Label_isBGActive": false
+          }
+        ],
+        "createdImageLabels": [],
+        "createdObjectProps": [
+          {
+            "Object_Name": "Cabaret_6ft_6 0",
+            "Object_CustomObject_Data": "",
+            "Object_CustomObject_WxH": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_CustomObject_MainSize": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_fontValue": "",
+            "StreamingData_fontAssetName": "",
+            "StreamingData_fontAssetData": "",
+            "StreamingData_BaseObjectImage": "",
+            "StreamingData_BaseObjectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopImageData": "",
+            "StreamingData_TableTopAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectImageData": "",
+            "StreamingData_SelectAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_BaseObject_Name": "6ft Cabaret",
+            "Object_BaseObject_SubName": "",
+            "Object_BaseObject_isCustom": false,
+            "Object_BaseObject_NumberOfChairs": 6,
+            "Object_PreFabName": "Cabaret_6ft_6",
+            "Object_PreFabContainer_Name": "cabaret",
+            "Object_Position": {
+              "x": -175.92721557617188,
+              "y": 183.34603881835938,
+              "z": 0
+            },
+            "Object_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Object_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 0
+            },
+            "Object_WxH": {
+              "x": 47.678489685058594,
+              "y": 40.70611572265625
+            },
+            "Object_Icon_Color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "Object_Numbering_Active": false,
+            "Object_Numbering_Text": "0"
+          },
+          {
+            "Object_Name": "Cabaret_6ft_6 1",
+            "Object_CustomObject_Data": "",
+            "Object_CustomObject_WxH": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_CustomObject_MainSize": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_fontValue": "",
+            "StreamingData_fontAssetName": "",
+            "StreamingData_fontAssetData": "",
+            "StreamingData_BaseObjectImage": "",
+            "StreamingData_BaseObjectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopImageData": "",
+            "StreamingData_TableTopAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectImageData": "",
+            "StreamingData_SelectAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_BaseObject_Name": "6ft Cabaret",
+            "Object_BaseObject_SubName": "",
+            "Object_BaseObject_isCustom": false,
+            "Object_BaseObject_NumberOfChairs": 6,
+            "Object_PreFabName": "Cabaret_6ft_6",
+            "Object_PreFabContainer_Name": "cabaret",
+            "Object_Position": {
+              "x": -169.78683471679688,
+              "y": 115.80220031738281,
+              "z": 0
+            },
+            "Object_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Object_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 0
+            },
+            "Object_WxH": {
+              "x": 47.678489685058594,
+              "y": 40.70611572265625
+            },
+            "Object_Icon_Color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "Object_Numbering_Active": false,
+            "Object_Numbering_Text": "0"
+          },
+          {
+            "Object_Name": "Cabaret_6ft_6 2",
+            "Object_CustomObject_Data": "",
+            "Object_CustomObject_WxH": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_CustomObject_MainSize": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_fontValue": "",
+            "StreamingData_fontAssetName": "",
+            "StreamingData_fontAssetData": "",
+            "StreamingData_BaseObjectImage": "",
+            "StreamingData_BaseObjectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopImageData": "",
+            "StreamingData_TableTopAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectImageData": "",
+            "StreamingData_SelectAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_BaseObject_Name": "6ft Cabaret",
+            "Object_BaseObject_SubName": "",
+            "Object_BaseObject_isCustom": false,
+            "Object_BaseObject_NumberOfChairs": 6,
+            "Object_PreFabName": "Cabaret_6ft_6",
+            "Object_PreFabContainer_Name": "cabaret",
+            "Object_Position": {
+              "x": -166.27801513671875,
+              "y": 50.88991165161133,
+              "z": 0
+            },
+            "Object_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Object_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 0
+            },
+            "Object_WxH": {
+              "x": 47.678489685058594,
+              "y": 40.70611572265625
+            },
+            "Object_Icon_Color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "Object_Numbering_Active": false,
+            "Object_Numbering_Text": "0"
+          }
+        ],
+        "createdDimensions": [],
+        "createdLineObjects": [],
+        "createdRectangleObjects": [],
+        "createdEllipseObjects": []
+      }
+    },
+    {
+      "LayoutName": "Enterprise 1",
+      "CurrentSceneName": "EnterpriseSuite",
+      "SceneNameSubtitle": "EnterpriseSuite\n<size=10%>\n<size=80%>level 2</size>",
+      "SceneAddress": "Assets/00_Main/Scenes/Rooms/133_Houndsditch/2nd/EnterpriseSuite.unity",
+      "SceneData": {
+        "ActiveSceneInfo": "EnterpriseSuite\n<size=10%>\n<size=80%>level 2</size>",
+        "SceneName": "EnterpriseSuite",
+        "setupTitle": "Enterprise Suite",
+        "setupSubTitle": "Setup Name",
+        "activeLogoName": "Logo - NUMBER2",
+        "floorplanCanvasScale": {
+          "x": 1.1399999856948853,
+          "y": 1.1399999856948853,
+          "z": 1.2000000476837158
+        },
+        "numberOfCreatedObjects": 5,
+        "SettingProperties": {
+          "PartitionCount": 1,
+          "partitionData": [
+            {
+              "PartitionOpen": true,
+              "PartitionClosed": true,
+              "PartitionToggle": false
+            }
+          ],
+          "ProjectorCount": 5,
+          "projectorData": [
+            {
+              "ImageVis": false,
+              "ProjectorToggle": false
+            },
+            {
+              "ImageVis": false,
+              "ProjectorToggle": false
+            },
+            {
+              "ImageVis": false,
+              "ProjectorToggle": false
+            },
+            {
+              "ImageVis": false,
+              "ProjectorToggle": false
+            },
+            {
+              "ImageVis": false,
+              "ProjectorToggle": false
+            }
+          ],
+          "isLogoVisibile": true,
+          "isDimensionVisible": true
+        },
+        "createdTextLabels": [
+          {
+            "Label_Name": "textLabel 01",
+            "Label_PreFabName": "textLabel",
+            "Label_Position": {
+              "x": -111.80000305175781,
+              "y": 259.70001220703125,
+              "z": 0
+            },
+            "Label_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Label_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "Label_WxH": {
+              "x": 74.72000122070312,
+              "y": 23.40999984741211,
+              "z": 0
+            },
+            "Label_TextInformation": "Enterprise 1",
+            "Label_TextAlignment": "Center",
+            "Label_TextSize": 12,
+            "Label_isBGActive": false
+          },
+          {
+            "Label_Name": "textLabel 02",
+            "Label_PreFabName": "textLabel",
+            "Label_Position": {
+              "x": 168.50006103515625,
+              "y": 259.7000427246094,
+              "z": 0
+            },
+            "Label_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Label_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "Label_WxH": {
+              "x": 74.72000122070312,
+              "y": 23.40999984741211,
+              "z": 0
+            },
+            "Label_TextInformation": "Enterprise 2",
+            "Label_TextAlignment": "Center",
+            "Label_TextSize": 12,
+            "Label_isBGActive": false
+          }
+        ],
+        "createdImageLabels": [],
+        "createdObjectProps": [
+          {
+            "Object_Name": "Cabaret_6ft_6 0",
+            "Object_CustomObject_Data": "",
+            "Object_CustomObject_WxH": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_CustomObject_MainSize": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_fontValue": "",
+            "StreamingData_fontAssetName": "",
+            "StreamingData_fontAssetData": "",
+            "StreamingData_BaseObjectImage": "",
+            "StreamingData_BaseObjectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopImageData": "",
+            "StreamingData_TableTopAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectImageData": "",
+            "StreamingData_SelectAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_BaseObject_Name": "6ft Cabaret",
+            "Object_BaseObject_SubName": "",
+            "Object_BaseObject_isCustom": false,
+            "Object_BaseObject_NumberOfChairs": 6,
+            "Object_PreFabName": "Cabaret_6ft_6",
+            "Object_PreFabContainer_Name": "cabaret",
+            "Object_Position": {
+              "x": -175.92721557617188,
+              "y": 183.34603881835938,
+              "z": 0
+            },
+            "Object_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Object_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 0
+            },
+            "Object_WxH": {
+              "x": 47.678489685058594,
+              "y": 40.70611572265625
+            },
+            "Object_Icon_Color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "Object_Numbering_Active": false,
+            "Object_Numbering_Text": "0"
+          },
+          {
+            "Object_Name": "Cabaret_6ft_6 1",
+            "Object_CustomObject_Data": "",
+            "Object_CustomObject_WxH": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_CustomObject_MainSize": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_fontValue": "",
+            "StreamingData_fontAssetName": "",
+            "StreamingData_fontAssetData": "",
+            "StreamingData_BaseObjectImage": "",
+            "StreamingData_BaseObjectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopImageData": "",
+            "StreamingData_TableTopAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectImageData": "",
+            "StreamingData_SelectAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_BaseObject_Name": "6ft Cabaret",
+            "Object_BaseObject_SubName": "",
+            "Object_BaseObject_isCustom": false,
+            "Object_BaseObject_NumberOfChairs": 6,
+            "Object_PreFabName": "Cabaret_6ft_6",
+            "Object_PreFabContainer_Name": "cabaret",
+            "Object_Position": {
+              "x": -169.78683471679688,
+              "y": 115.80220031738281,
+              "z": 0
+            },
+            "Object_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Object_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 0
+            },
+            "Object_WxH": {
+              "x": 47.678489685058594,
+              "y": 40.70611572265625
+            },
+            "Object_Icon_Color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "Object_Numbering_Active": false,
+            "Object_Numbering_Text": "0"
+          },
+          {
+            "Object_Name": "Cabaret_6ft_6 2",
+            "Object_CustomObject_Data": "",
+            "Object_CustomObject_WxH": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_CustomObject_MainSize": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_fontValue": "",
+            "StreamingData_fontAssetName": "",
+            "StreamingData_fontAssetData": "",
+            "StreamingData_BaseObjectImage": "",
+            "StreamingData_BaseObjectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopImageData": "",
+            "StreamingData_TableTopAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectImageData": "",
+            "StreamingData_SelectAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_BaseObject_Name": "6ft Cabaret",
+            "Object_BaseObject_SubName": "",
+            "Object_BaseObject_isCustom": false,
+            "Object_BaseObject_NumberOfChairs": 6,
+            "Object_PreFabName": "Cabaret_6ft_6",
+            "Object_PreFabContainer_Name": "cabaret",
+            "Object_Position": {
+              "x": -166.27801513671875,
+              "y": 50.88991165161133,
+              "z": 0
+            },
+            "Object_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Object_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 0
+            },
+            "Object_WxH": {
+              "x": 47.678489685058594,
+              "y": 40.70611572265625
+            },
+            "Object_Icon_Color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "Object_Numbering_Active": false,
+            "Object_Numbering_Text": "0"
+          }
+        ],
+        "createdDimensions": [],
+        "createdLineObjects": [],
+        "createdRectangleObjects": [],
+        "createdEllipseObjects": []
+      }
+    },
+    {
+      "LayoutName": "Engage 1_4",
+      "CurrentSceneName": "Engage",
+      "SceneNameSubtitle": "Engage\n<size=10%>\n<size=80%>level 2</size>",
+      "SceneAddress": "Assets/00_Main/Scenes/Rooms/133_Houndsditch/2nd/Engage.unity",
+      "SceneData": {
+        "ActiveSceneInfo": "Engage\n<size=10%>\n<size=80%>level 2</size>",
+        "SceneName": "Engage",
+        "setupTitle": "Engage",
+        "setupSubTitle": "Setup Name",
+        "activeLogoName": "Logo - NUMBER2",
+        "floorplanCanvasScale": {
+          "x": 0.9999999403953552,
+          "y": 0.9999999403953552,
+          "z": 1
+        },
+        "numberOfCreatedObjects": 4,
+        "SettingProperties": {
+          "PartitionCount": 3,
+          "partitionData": [
+            {
+              "PartitionOpen": false,
+              "PartitionClosed": true,
+              "PartitionToggle": false
+            },
+            {
+              "PartitionOpen": false,
+              "PartitionClosed": true,
+              "PartitionToggle": false
+            },
+            {
+              "PartitionOpen": false,
+              "PartitionClosed": true,
+              "PartitionToggle": false
+            }
+          ],
+          "ProjectorCount": 3,
+          "projectorData": [
+            {
+              "ImageVis": false,
+              "ProjectorToggle": false
+            },
+            {
+              "ImageVis": false,
+              "ProjectorToggle": false
+            },
+            {
+              "ImageVis": false,
+              "ProjectorToggle": false
+            }
+          ],
+          "isLogoVisibile": true,
+          "isDimensionVisible": true
+        },
+        "createdTextLabels": [],
+        "createdImageLabels": [],
+        "createdObjectProps": [
+          {
+            "Object_Name": "Round_6ft_12 0",
+            "Object_CustomObject_Data": "",
+            "Object_CustomObject_WxH": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_CustomObject_MainSize": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_fontValue": "",
+            "StreamingData_fontAssetName": "",
+            "StreamingData_fontAssetData": "",
+            "StreamingData_BaseObjectImage": "",
+            "StreamingData_BaseObjectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopImageData": "",
+            "StreamingData_TableTopAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectImageData": "",
+            "StreamingData_SelectAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_BaseObject_Name": "6ft Round",
+            "Object_BaseObject_SubName": "",
+            "Object_BaseObject_isCustom": false,
+            "Object_BaseObject_NumberOfChairs": 12,
+            "Object_PreFabName": "Round_6ft_12",
+            "Object_PreFabContainer_Name": "round",
+            "Object_Position": {
+              "x": -385.55706787109375,
+              "y": 180.01454162597656,
+              "z": 0
+            },
+            "Object_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Object_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "Object_WxH": {
+              "x": 117.44573974609375,
+              "y": 117.44573974609375
+            },
+            "Object_Icon_Color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "Object_Numbering_Active": false,
+            "Object_Numbering_Text": "0"
+          },
+          {
+            "Object_Name": "Halfmoon_6ft_6 4",
+            "Object_CustomObject_Data": "",
+            "Object_CustomObject_WxH": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_CustomObject_MainSize": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_fontValue": "",
+            "StreamingData_fontAssetName": "",
+            "StreamingData_fontAssetData": "",
+            "StreamingData_BaseObjectImage": "",
+            "StreamingData_BaseObjectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopImageData": "",
+            "StreamingData_TableTopAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectImageData": "",
+            "StreamingData_SelectAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_BaseObject_Name": "6ft Halfmoon",
+            "Object_BaseObject_SubName": "",
+            "Object_BaseObject_isCustom": false,
+            "Object_BaseObject_NumberOfChairs": 6,
+            "Object_PreFabName": "Halfmoon_6ft_6",
+            "Object_PreFabContainer_Name": "halfmoon",
+            "Object_Position": {
+              "x": -436.5569763183594,
+              "y": 13.014503479003906,
+              "z": 0
+            },
+            "Object_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Object_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 0
+            },
+            "Object_WxH": {
+              "x": 113.35789489746094,
+              "y": 59.480743408203125
+            },
+            "Object_Icon_Color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "Object_Numbering_Active": false,
+            "Object_Numbering_Text": "0"
+          },
+          {
+            "Object_Name": "Halfmoon_6ft_6 5",
+            "Object_CustomObject_Data": "",
+            "Object_CustomObject_WxH": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_CustomObject_MainSize": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_fontValue": "",
+            "StreamingData_fontAssetName": "",
+            "StreamingData_fontAssetData": "",
+            "StreamingData_BaseObjectImage": "",
+            "StreamingData_BaseObjectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopImageData": "",
+            "StreamingData_TableTopAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectImageData": "",
+            "StreamingData_SelectAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_BaseObject_Name": "6ft Halfmoon",
+            "Object_BaseObject_SubName": "",
+            "Object_BaseObject_isCustom": false,
+            "Object_BaseObject_NumberOfChairs": 6,
+            "Object_PreFabName": "Halfmoon_6ft_6",
+            "Object_PreFabContainer_Name": "halfmoon",
+            "Object_Position": {
+              "x": -158.5569610595703,
+              "y": 145.01451110839844,
+              "z": 0
+            },
+            "Object_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Object_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "Object_WxH": {
+              "x": 113.35789489746094,
+              "y": 59.480743408203125
+            },
+            "Object_Icon_Color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "Object_Numbering_Active": false,
+            "Object_Numbering_Text": "0"
+          },
+          {
+            "Object_Name": "Halfmoon_6ft_6 6",
+            "Object_CustomObject_Data": "",
+            "Object_CustomObject_WxH": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_CustomObject_MainSize": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_fontValue": "",
+            "StreamingData_fontAssetName": "",
+            "StreamingData_fontAssetData": "",
+            "StreamingData_BaseObjectImage": "",
+            "StreamingData_BaseObjectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopImageData": "",
+            "StreamingData_TableTopAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectImageData": "",
+            "StreamingData_SelectAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_BaseObject_Name": "6ft Halfmoon",
+            "Object_BaseObject_SubName": "",
+            "Object_BaseObject_isCustom": false,
+            "Object_BaseObject_NumberOfChairs": 6,
+            "Object_PreFabName": "Halfmoon_6ft_6",
+            "Object_PreFabContainer_Name": "halfmoon",
+            "Object_Position": {
+              "x": -151.5569610595703,
+              "y": -32.98550796508789,
+              "z": 0
+            },
+            "Object_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Object_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "Object_WxH": {
+              "x": 113.35789489746094,
+              "y": 59.480743408203125
+            },
+            "Object_Icon_Color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "Object_Numbering_Active": false,
+            "Object_Numbering_Text": "0"
+          }
+        ],
+        "createdDimensions": [],
+        "createdLineObjects": [],
+        "createdRectangleObjects": [],
+        "createdEllipseObjects": []
+      }
+    },
+    {
+      "LayoutName": "Eng 2",
+      "CurrentSceneName": "Engage",
+      "SceneNameSubtitle": "Engage\n<size=10%>\n<size=80%>level 2</size>",
+      "SceneAddress": "Assets/00_Main/Scenes/Rooms/133_Houndsditch/2nd/Engage.unity",
+      "SceneData": {
+        "ActiveSceneInfo": "Engage\n<size=10%>\n<size=80%>level 2</size>",
+        "SceneName": "Engage",
+        "setupTitle": "Engage",
+        "setupSubTitle": "Setup Name",
+        "activeLogoName": "Logo - NUMBER2",
+        "floorplanCanvasScale": {
+          "x": 0.9999998807907104,
+          "y": 0.9999998807907104,
+          "z": 1
+        },
+        "numberOfCreatedObjects": 5,
+        "SettingProperties": {
+          "PartitionCount": 3,
+          "partitionData": [
+            {
+              "PartitionOpen": false,
+              "PartitionClosed": true,
+              "PartitionToggle": false
+            },
+            {
+              "PartitionOpen": false,
+              "PartitionClosed": true,
+              "PartitionToggle": false
+            },
+            {
+              "PartitionOpen": false,
+              "PartitionClosed": true,
+              "PartitionToggle": false
+            }
+          ],
+          "ProjectorCount": 3,
+          "projectorData": [
+            {
+              "ImageVis": false,
+              "ProjectorToggle": false
+            },
+            {
+              "ImageVis": false,
+              "ProjectorToggle": false
+            },
+            {
+              "ImageVis": false,
+              "ProjectorToggle": false
+            }
+          ],
+          "isLogoVisibile": true,
+          "isDimensionVisible": true
+        },
+        "createdTextLabels": [],
+        "createdImageLabels": [],
+        "createdObjectProps": [
+          {
+            "Object_Name": "Halfmoon_6ft_6 0",
+            "Object_CustomObject_Data": "",
+            "Object_CustomObject_WxH": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_CustomObject_MainSize": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_fontValue": "",
+            "StreamingData_fontAssetName": "",
+            "StreamingData_fontAssetData": "",
+            "StreamingData_BaseObjectImage": "",
+            "StreamingData_BaseObjectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopImageData": "",
+            "StreamingData_TableTopAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectImageData": "",
+            "StreamingData_SelectAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_BaseObject_Name": "6ft Halfmoon",
+            "Object_BaseObject_SubName": "",
+            "Object_BaseObject_isCustom": false,
+            "Object_BaseObject_NumberOfChairs": 6,
+            "Object_PreFabName": "Halfmoon_6ft_6",
+            "Object_PreFabContainer_Name": "halfmoon",
+            "Object_Position": {
+              "x": -380.5570373535156,
+              "y": 229.01455688476562,
+              "z": 0
+            },
+            "Object_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Object_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "Object_WxH": {
+              "x": 113.35787200927734,
+              "y": 59.48072814941406
+            },
+            "Object_Icon_Color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "Object_Numbering_Active": false,
+            "Object_Numbering_Text": "0"
+          },
+          {
+            "Object_Name": "Halfmoon_6ft_6 1",
+            "Object_CustomObject_Data": "",
+            "Object_CustomObject_WxH": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_CustomObject_MainSize": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_fontValue": "",
+            "StreamingData_fontAssetName": "",
+            "StreamingData_fontAssetData": "",
+            "StreamingData_BaseObjectImage": "",
+            "StreamingData_BaseObjectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopImageData": "",
+            "StreamingData_TableTopAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectImageData": "",
+            "StreamingData_SelectAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_BaseObject_Name": "6ft Halfmoon",
+            "Object_BaseObject_SubName": "",
+            "Object_BaseObject_isCustom": false,
+            "Object_BaseObject_NumberOfChairs": 6,
+            "Object_PreFabName": "Halfmoon_6ft_6",
+            "Object_PreFabContainer_Name": "halfmoon",
+            "Object_Position": {
+              "x": -380.5570373535156,
+              "y": 146.5682830810547,
+              "z": 0
+            },
+            "Object_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Object_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "Object_WxH": {
+              "x": 113.35787200927734,
+              "y": 59.48072814941406
+            },
+            "Object_Icon_Color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "Object_Numbering_Active": false,
+            "Object_Numbering_Text": "0"
+          },
+          {
+            "Object_Name": "Halfmoon_6ft_6 2",
+            "Object_CustomObject_Data": "",
+            "Object_CustomObject_WxH": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_CustomObject_MainSize": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_fontValue": "",
+            "StreamingData_fontAssetName": "",
+            "StreamingData_fontAssetData": "",
+            "StreamingData_BaseObjectImage": "",
+            "StreamingData_BaseObjectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopImageData": "",
+            "StreamingData_TableTopAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectImageData": "",
+            "StreamingData_SelectAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_BaseObject_Name": "6ft Halfmoon",
+            "Object_BaseObject_SubName": "",
+            "Object_BaseObject_isCustom": false,
+            "Object_BaseObject_NumberOfChairs": 6,
+            "Object_PreFabName": "Halfmoon_6ft_6",
+            "Object_PreFabContainer_Name": "halfmoon",
+            "Object_Position": {
+              "x": -380.5570373535156,
+              "y": 64.12201690673828,
+              "z": 0
+            },
+            "Object_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Object_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "Object_WxH": {
+              "x": 113.35787200927734,
+              "y": 59.48072814941406
+            },
+            "Object_Icon_Color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "Object_Numbering_Active": false,
+            "Object_Numbering_Text": "0"
+          },
+          {
+            "Object_Name": "Halfmoon_6ft_6 3",
+            "Object_CustomObject_Data": "",
+            "Object_CustomObject_WxH": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_CustomObject_MainSize": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_fontValue": "",
+            "StreamingData_fontAssetName": "",
+            "StreamingData_fontAssetData": "",
+            "StreamingData_BaseObjectImage": "",
+            "StreamingData_BaseObjectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopImageData": "",
+            "StreamingData_TableTopAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectImageData": "",
+            "StreamingData_SelectAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_BaseObject_Name": "6ft Halfmoon",
+            "Object_BaseObject_SubName": "",
+            "Object_BaseObject_isCustom": false,
+            "Object_BaseObject_NumberOfChairs": 6,
+            "Object_PreFabName": "Halfmoon_6ft_6",
+            "Object_PreFabContainer_Name": "halfmoon",
+            "Object_Position": {
+              "x": -380.5570373535156,
+              "y": -18.324251174926758,
+              "z": 0
+            },
+            "Object_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Object_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "Object_WxH": {
+              "x": 113.35787200927734,
+              "y": 59.48072814941406
+            },
+            "Object_Icon_Color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "Object_Numbering_Active": false,
+            "Object_Numbering_Text": "0"
+          },
+          {
+            "Object_Name": "Halfmoon_6ft_6 4",
+            "Object_CustomObject_Data": "",
+            "Object_CustomObject_WxH": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_CustomObject_MainSize": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_fontValue": "",
+            "StreamingData_fontAssetName": "",
+            "StreamingData_fontAssetData": "",
+            "StreamingData_BaseObjectImage": "",
+            "StreamingData_BaseObjectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopImageData": "",
+            "StreamingData_TableTopAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectImageData": "",
+            "StreamingData_SelectAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_BaseObject_Name": "6ft Halfmoon",
+            "Object_BaseObject_SubName": "",
+            "Object_BaseObject_isCustom": false,
+            "Object_BaseObject_NumberOfChairs": 6,
+            "Object_PreFabName": "Halfmoon_6ft_6",
+            "Object_PreFabContainer_Name": "halfmoon",
+            "Object_Position": {
+              "x": -380.5570373535156,
+              "y": -100.77052307128906,
+              "z": 0
+            },
+            "Object_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Object_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "Object_WxH": {
+              "x": 113.35787200927734,
+              "y": 59.48072814941406
+            },
+            "Object_Icon_Color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "Object_Numbering_Active": false,
+            "Object_Numbering_Text": "0"
+          }
+        ],
+        "createdDimensions": [],
+        "createdLineObjects": [],
+        "createdRectangleObjects": [],
+        "createdEllipseObjects": []
+      }
+    },
+    {
+      "LayoutName": "Eng 2_6",
+      "CurrentSceneName": "Engage",
+      "SceneNameSubtitle": "Engage\n<size=10%>\n<size=80%>level 2</size>",
+      "SceneAddress": "Assets/00_Main/Scenes/Rooms/133_Houndsditch/2nd/Engage.unity",
+      "SceneData": {
+        "ActiveSceneInfo": "Engage\n<size=10%>\n<size=80%>level 2</size>",
+        "SceneName": "Engage",
+        "setupTitle": "Engage",
+        "setupSubTitle": "Setup Name",
+        "activeLogoName": "Logo - NUMBER2",
+        "floorplanCanvasScale": {
+          "x": 0.9999998807907104,
+          "y": 0.9999998807907104,
+          "z": 1
+        },
+        "numberOfCreatedObjects": 5,
+        "SettingProperties": {
+          "PartitionCount": 3,
+          "partitionData": [
+            {
+              "PartitionOpen": false,
+              "PartitionClosed": true,
+              "PartitionToggle": false
+            },
+            {
+              "PartitionOpen": false,
+              "PartitionClosed": true,
+              "PartitionToggle": false
+            },
+            {
+              "PartitionOpen": false,
+              "PartitionClosed": true,
+              "PartitionToggle": false
+            }
+          ],
+          "ProjectorCount": 3,
+          "projectorData": [
+            {
+              "ImageVis": false,
+              "ProjectorToggle": false
+            },
+            {
+              "ImageVis": false,
+              "ProjectorToggle": false
+            },
+            {
+              "ImageVis": false,
+              "ProjectorToggle": false
+            }
+          ],
+          "isLogoVisibile": true,
+          "isDimensionVisible": true
+        },
+        "createdTextLabels": [],
+        "createdImageLabels": [],
+        "createdObjectProps": [
+          {
+            "Object_Name": "Halfmoon_6ft_6 0",
+            "Object_CustomObject_Data": "",
+            "Object_CustomObject_WxH": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_CustomObject_MainSize": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_fontValue": "",
+            "StreamingData_fontAssetName": "",
+            "StreamingData_fontAssetData": "",
+            "StreamingData_BaseObjectImage": "",
+            "StreamingData_BaseObjectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopImageData": "",
+            "StreamingData_TableTopAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectImageData": "",
+            "StreamingData_SelectAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_BaseObject_Name": "6ft Halfmoon",
+            "Object_BaseObject_SubName": "",
+            "Object_BaseObject_isCustom": false,
+            "Object_BaseObject_NumberOfChairs": 6,
+            "Object_PreFabName": "Halfmoon_6ft_6",
+            "Object_PreFabContainer_Name": "halfmoon",
+            "Object_Position": {
+              "x": -380.5570373535156,
+              "y": 229.01455688476562,
+              "z": 0
+            },
+            "Object_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Object_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "Object_WxH": {
+              "x": 113.35787200927734,
+              "y": 59.48072814941406
+            },
+            "Object_Icon_Color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "Object_Numbering_Active": false,
+            "Object_Numbering_Text": "0"
+          },
+          {
+            "Object_Name": "Halfmoon_6ft_6 1",
+            "Object_CustomObject_Data": "",
+            "Object_CustomObject_WxH": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_CustomObject_MainSize": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_fontValue": "",
+            "StreamingData_fontAssetName": "",
+            "StreamingData_fontAssetData": "",
+            "StreamingData_BaseObjectImage": "",
+            "StreamingData_BaseObjectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopImageData": "",
+            "StreamingData_TableTopAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectImageData": "",
+            "StreamingData_SelectAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_BaseObject_Name": "6ft Halfmoon",
+            "Object_BaseObject_SubName": "",
+            "Object_BaseObject_isCustom": false,
+            "Object_BaseObject_NumberOfChairs": 6,
+            "Object_PreFabName": "Halfmoon_6ft_6",
+            "Object_PreFabContainer_Name": "halfmoon",
+            "Object_Position": {
+              "x": -380.5570373535156,
+              "y": 146.5682830810547,
+              "z": 0
+            },
+            "Object_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Object_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "Object_WxH": {
+              "x": 113.35787200927734,
+              "y": 59.48072814941406
+            },
+            "Object_Icon_Color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "Object_Numbering_Active": false,
+            "Object_Numbering_Text": "0"
+          },
+          {
+            "Object_Name": "Halfmoon_6ft_6 2",
+            "Object_CustomObject_Data": "",
+            "Object_CustomObject_WxH": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_CustomObject_MainSize": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_fontValue": "",
+            "StreamingData_fontAssetName": "",
+            "StreamingData_fontAssetData": "",
+            "StreamingData_BaseObjectImage": "",
+            "StreamingData_BaseObjectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopImageData": "",
+            "StreamingData_TableTopAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectImageData": "",
+            "StreamingData_SelectAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_BaseObject_Name": "6ft Halfmoon",
+            "Object_BaseObject_SubName": "",
+            "Object_BaseObject_isCustom": false,
+            "Object_BaseObject_NumberOfChairs": 6,
+            "Object_PreFabName": "Halfmoon_6ft_6",
+            "Object_PreFabContainer_Name": "halfmoon",
+            "Object_Position": {
+              "x": -380.5570373535156,
+              "y": 64.12201690673828,
+              "z": 0
+            },
+            "Object_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Object_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "Object_WxH": {
+              "x": 113.35787200927734,
+              "y": 59.48072814941406
+            },
+            "Object_Icon_Color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "Object_Numbering_Active": false,
+            "Object_Numbering_Text": "0"
+          },
+          {
+            "Object_Name": "Halfmoon_6ft_6 3",
+            "Object_CustomObject_Data": "",
+            "Object_CustomObject_WxH": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_CustomObject_MainSize": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_fontValue": "",
+            "StreamingData_fontAssetName": "",
+            "StreamingData_fontAssetData": "",
+            "StreamingData_BaseObjectImage": "",
+            "StreamingData_BaseObjectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopImageData": "",
+            "StreamingData_TableTopAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectImageData": "",
+            "StreamingData_SelectAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_BaseObject_Name": "6ft Halfmoon",
+            "Object_BaseObject_SubName": "",
+            "Object_BaseObject_isCustom": false,
+            "Object_BaseObject_NumberOfChairs": 6,
+            "Object_PreFabName": "Halfmoon_6ft_6",
+            "Object_PreFabContainer_Name": "halfmoon",
+            "Object_Position": {
+              "x": -380.5570373535156,
+              "y": -18.324251174926758,
+              "z": 0
+            },
+            "Object_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Object_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "Object_WxH": {
+              "x": 113.35787200927734,
+              "y": 59.48072814941406
+            },
+            "Object_Icon_Color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "Object_Numbering_Active": false,
+            "Object_Numbering_Text": "0"
+          },
+          {
+            "Object_Name": "Halfmoon_6ft_6 4",
+            "Object_CustomObject_Data": "",
+            "Object_CustomObject_WxH": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_CustomObject_MainSize": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_fontValue": "",
+            "StreamingData_fontAssetName": "",
+            "StreamingData_fontAssetData": "",
+            "StreamingData_BaseObjectImage": "",
+            "StreamingData_BaseObjectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopImageData": "",
+            "StreamingData_TableTopAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectImageData": "",
+            "StreamingData_SelectAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_BaseObject_Name": "6ft Halfmoon",
+            "Object_BaseObject_SubName": "",
+            "Object_BaseObject_isCustom": false,
+            "Object_BaseObject_NumberOfChairs": 6,
+            "Object_PreFabName": "Halfmoon_6ft_6",
+            "Object_PreFabContainer_Name": "halfmoon",
+            "Object_Position": {
+              "x": -380.5570373535156,
+              "y": -100.77052307128906,
+              "z": 0
+            },
+            "Object_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Object_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "Object_WxH": {
+              "x": 113.35787200927734,
+              "y": 59.48072814941406
+            },
+            "Object_Icon_Color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "Object_Numbering_Active": false,
+            "Object_Numbering_Text": "0"
+          }
+        ],
+        "createdDimensions": [],
+        "createdLineObjects": [],
+        "createdRectangleObjects": [],
+        "createdEllipseObjects": []
+      }
+    },
+    {
+      "LayoutName": "Setup1",
+      "CurrentSceneName": "Engage",
+      "SceneNameSubtitle": "Engage\n<size=10%>\n<size=80%>level 2</size>",
+      "SceneAddress": "Assets/00_Main/Scenes/Rooms/133_Houndsditch/2nd/Engage.unity",
+      "SceneData": {
+        "ActiveSceneInfo": "Engage\n<size=10%>\n<size=80%>level 2</size>",
+        "SceneName": "Engage",
+        "setupTitle": "Engage",
+        "setupSubTitle": "Setup Name",
+        "activeLogoName": "Logo - NUMBER2",
+        "floorplanCanvasScale": {
+          "x": 0.9999999403953552,
+          "y": 0.9999999403953552,
+          "z": 1
+        },
+        "numberOfCreatedObjects": 8,
+        "SettingProperties": {
+          "PartitionCount": 3,
+          "partitionData": [
+            {
+              "PartitionOpen": false,
+              "PartitionClosed": true,
+              "PartitionToggle": false
+            },
+            {
+              "PartitionOpen": false,
+              "PartitionClosed": true,
+              "PartitionToggle": false
+            },
+            {
+              "PartitionOpen": false,
+              "PartitionClosed": true,
+              "PartitionToggle": false
+            }
+          ],
+          "ProjectorCount": 3,
+          "projectorData": [
+            {
+              "ImageVis": false,
+              "ProjectorToggle": false
+            },
+            {
+              "ImageVis": false,
+              "ProjectorToggle": false
+            },
+            {
+              "ImageVis": false,
+              "ProjectorToggle": false
+            }
+          ],
+          "isLogoVisibile": true,
+          "isDimensionVisible": true
+        },
+        "createdTextLabels": [],
+        "createdImageLabels": [],
+        "createdObjectProps": [
+          {
+            "Object_Name": "Halfmoon_6ft_6 0",
+            "Object_CustomObject_Data": "",
+            "Object_CustomObject_WxH": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_CustomObject_MainSize": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_fontValue": "",
+            "StreamingData_fontAssetName": "",
+            "StreamingData_fontAssetData": "",
+            "StreamingData_BaseObjectImage": "",
+            "StreamingData_BaseObjectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopImageData": "",
+            "StreamingData_TableTopAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectImageData": "",
+            "StreamingData_SelectAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_BaseObject_Name": "6ft Halfmoon",
+            "Object_BaseObject_SubName": "",
+            "Object_BaseObject_isCustom": false,
+            "Object_BaseObject_NumberOfChairs": 6,
+            "Object_PreFabName": "Halfmoon_6ft_6",
+            "Object_PreFabContainer_Name": "halfmoon",
+            "Object_Position": {
+              "x": -185.55690002441406,
+              "y": 215.0145263671875,
+              "z": 0
+            },
+            "Object_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Object_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 0
+            },
+            "Object_WxH": {
+              "x": 113.35789489746094,
+              "y": 59.480743408203125
+            },
+            "Object_Icon_Color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "Object_Numbering_Active": false,
+            "Object_Numbering_Text": "0"
+          },
+          {
+            "Object_Name": "Halfmoon_6ft_6 1",
+            "Object_CustomObject_Data": "",
+            "Object_CustomObject_WxH": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_CustomObject_MainSize": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_fontValue": "",
+            "StreamingData_fontAssetName": "",
+            "StreamingData_fontAssetData": "",
+            "StreamingData_BaseObjectImage": "",
+            "StreamingData_BaseObjectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopImageData": "",
+            "StreamingData_TableTopAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectImageData": "",
+            "StreamingData_SelectAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_BaseObject_Name": "6ft Halfmoon",
+            "Object_BaseObject_SubName": "",
+            "Object_BaseObject_isCustom": false,
+            "Object_BaseObject_NumberOfChairs": 6,
+            "Object_PreFabName": "Halfmoon_6ft_6",
+            "Object_PreFabContainer_Name": "halfmoon",
+            "Object_Position": {
+              "x": -185.55690002441406,
+              "y": 132.5682373046875,
+              "z": 0
+            },
+            "Object_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Object_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "Object_WxH": {
+              "x": 113.35789489746094,
+              "y": 59.480743408203125
+            },
+            "Object_Icon_Color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "Object_Numbering_Active": false,
+            "Object_Numbering_Text": "0"
+          },
+          {
+            "Object_Name": "Halfmoon_6ft_6 2",
+            "Object_CustomObject_Data": "",
+            "Object_CustomObject_WxH": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_CustomObject_MainSize": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_fontValue": "",
+            "StreamingData_fontAssetName": "",
+            "StreamingData_fontAssetData": "",
+            "StreamingData_BaseObjectImage": "",
+            "StreamingData_BaseObjectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopImageData": "",
+            "StreamingData_TableTopAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectImageData": "",
+            "StreamingData_SelectAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_BaseObject_Name": "6ft Halfmoon",
+            "Object_BaseObject_SubName": "",
+            "Object_BaseObject_isCustom": false,
+            "Object_BaseObject_NumberOfChairs": 6,
+            "Object_PreFabName": "Halfmoon_6ft_6",
+            "Object_PreFabContainer_Name": "halfmoon",
+            "Object_Position": {
+              "x": -185.55690002441406,
+              "y": 50.12195587158203,
+              "z": 0
+            },
+            "Object_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Object_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "Object_WxH": {
+              "x": 113.35789489746094,
+              "y": 59.480743408203125
+            },
+            "Object_Icon_Color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "Object_Numbering_Active": false,
+            "Object_Numbering_Text": "0"
+          },
+          {
+            "Object_Name": "Halfmoon_6ft_6 3",
+            "Object_CustomObject_Data": "",
+            "Object_CustomObject_WxH": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_CustomObject_MainSize": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_fontValue": "",
+            "StreamingData_fontAssetName": "",
+            "StreamingData_fontAssetData": "",
+            "StreamingData_BaseObjectImage": "",
+            "StreamingData_BaseObjectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopImageData": "",
+            "StreamingData_TableTopAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectImageData": "",
+            "StreamingData_SelectAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_BaseObject_Name": "6ft Halfmoon",
+            "Object_BaseObject_SubName": "",
+            "Object_BaseObject_isCustom": false,
+            "Object_BaseObject_NumberOfChairs": 6,
+            "Object_PreFabName": "Halfmoon_6ft_6",
+            "Object_PreFabContainer_Name": "halfmoon",
+            "Object_Position": {
+              "x": -185.55690002441406,
+              "y": -32.32432556152344,
+              "z": 0
+            },
+            "Object_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Object_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "Object_WxH": {
+              "x": 113.35789489746094,
+              "y": 59.480743408203125
+            },
+            "Object_Icon_Color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "Object_Numbering_Active": false,
+            "Object_Numbering_Text": "0"
+          },
+          {
+            "Object_Name": "Halfmoon_6ft_6 4",
+            "Object_CustomObject_Data": "",
+            "Object_CustomObject_WxH": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_CustomObject_MainSize": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_fontValue": "",
+            "StreamingData_fontAssetName": "",
+            "StreamingData_fontAssetData": "",
+            "StreamingData_BaseObjectImage": "",
+            "StreamingData_BaseObjectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopImageData": "",
+            "StreamingData_TableTopAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectImageData": "",
+            "StreamingData_SelectAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_BaseObject_Name": "6ft Halfmoon",
+            "Object_BaseObject_SubName": "",
+            "Object_BaseObject_isCustom": false,
+            "Object_BaseObject_NumberOfChairs": 6,
+            "Object_PreFabName": "Halfmoon_6ft_6",
+            "Object_PreFabContainer_Name": "halfmoon",
+            "Object_Position": {
+              "x": -185.55690002441406,
+              "y": -114.7706069946289,
+              "z": 0
+            },
+            "Object_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Object_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "Object_WxH": {
+              "x": 113.35789489746094,
+              "y": 59.480743408203125
+            },
+            "Object_Icon_Color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "Object_Numbering_Active": false,
+            "Object_Numbering_Text": "0"
+          },
+          {
+            "Object_Name": "Halfmoon_6ft_6 5",
+            "Object_CustomObject_Data": "",
+            "Object_CustomObject_WxH": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_CustomObject_MainSize": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_fontValue": "",
+            "StreamingData_fontAssetName": "",
+            "StreamingData_fontAssetData": "",
+            "StreamingData_BaseObjectImage": "",
+            "StreamingData_BaseObjectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopImageData": "",
+            "StreamingData_TableTopAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectImageData": "",
+            "StreamingData_SelectAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_BaseObject_Name": "6ft Halfmoon",
+            "Object_BaseObject_SubName": "",
+            "Object_BaseObject_isCustom": false,
+            "Object_BaseObject_NumberOfChairs": 6,
+            "Object_PreFabName": "Halfmoon_6ft_6",
+            "Object_PreFabContainer_Name": "halfmoon",
+            "Object_Position": {
+              "x": -49.23346710205078,
+              "y": 215.0145263671875,
+              "z": 0
+            },
+            "Object_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Object_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "Object_WxH": {
+              "x": 113.35789489746094,
+              "y": 59.480743408203125
+            },
+            "Object_Icon_Color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "Object_Numbering_Active": false,
+            "Object_Numbering_Text": "0"
+          },
+          {
+            "Object_Name": "Halfmoon_6ft_6 6",
+            "Object_CustomObject_Data": "",
+            "Object_CustomObject_WxH": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_CustomObject_MainSize": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_fontValue": "",
+            "StreamingData_fontAssetName": "",
+            "StreamingData_fontAssetData": "",
+            "StreamingData_BaseObjectImage": "",
+            "StreamingData_BaseObjectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopImageData": "",
+            "StreamingData_TableTopAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectImageData": "",
+            "StreamingData_SelectAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_BaseObject_Name": "6ft Halfmoon",
+            "Object_BaseObject_SubName": "",
+            "Object_BaseObject_isCustom": false,
+            "Object_BaseObject_NumberOfChairs": 6,
+            "Object_PreFabName": "Halfmoon_6ft_6",
+            "Object_PreFabContainer_Name": "halfmoon",
+            "Object_Position": {
+              "x": -49.23346710205078,
+              "y": 132.5682373046875,
+              "z": 0
+            },
+            "Object_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Object_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "Object_WxH": {
+              "x": 113.35789489746094,
+              "y": 59.480743408203125
+            },
+            "Object_Icon_Color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "Object_Numbering_Active": false,
+            "Object_Numbering_Text": "0"
+          },
+          {
+            "Object_Name": "Halfmoon_6ft_6 7",
+            "Object_CustomObject_Data": "",
+            "Object_CustomObject_WxH": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_CustomObject_MainSize": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_fontValue": "",
+            "StreamingData_fontAssetName": "",
+            "StreamingData_fontAssetData": "",
+            "StreamingData_BaseObjectImage": "",
+            "StreamingData_BaseObjectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopImageData": "",
+            "StreamingData_TableTopAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectImageData": "",
+            "StreamingData_SelectAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_BaseObject_Name": "6ft Halfmoon",
+            "Object_BaseObject_SubName": "",
+            "Object_BaseObject_isCustom": false,
+            "Object_BaseObject_NumberOfChairs": 6,
+            "Object_PreFabName": "Halfmoon_6ft_6",
+            "Object_PreFabContainer_Name": "halfmoon",
+            "Object_Position": {
+              "x": -49.23346710205078,
+              "y": 50.12195587158203,
+              "z": 0
+            },
+            "Object_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Object_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "Object_WxH": {
+              "x": 113.35789489746094,
+              "y": 59.480743408203125
+            },
+            "Object_Icon_Color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "Object_Numbering_Active": false,
+            "Object_Numbering_Text": "0"
+          }
+        ],
+        "createdDimensions": [],
+        "createdLineObjects": [],
+        "createdRectangleObjects": [],
+        "createdEllipseObjects": []
+      }
+    },
+    {
+      "LayoutName": "Setup1_8",
+      "CurrentSceneName": "Engage",
+      "SceneNameSubtitle": "Engage\n<size=10%>\n<size=80%>level 2</size>",
+      "SceneAddress": "Assets/00_Main/Scenes/Rooms/133_Houndsditch/2nd/Engage.unity",
+      "SceneData": {
+        "ActiveSceneInfo": "Engage\n<size=10%>\n<size=80%>level 2</size>",
+        "SceneName": "Engage",
+        "setupTitle": "Engage",
+        "setupSubTitle": "Setup Name",
+        "activeLogoName": "Logo - NUMBER2",
+        "floorplanCanvasScale": {
+          "x": 0.9999999403953552,
+          "y": 0.9999999403953552,
+          "z": 1
+        },
+        "numberOfCreatedObjects": 8,
+        "SettingProperties": {
+          "PartitionCount": 3,
+          "partitionData": [
+            {
+              "PartitionOpen": false,
+              "PartitionClosed": true,
+              "PartitionToggle": false
+            },
+            {
+              "PartitionOpen": false,
+              "PartitionClosed": true,
+              "PartitionToggle": false
+            },
+            {
+              "PartitionOpen": false,
+              "PartitionClosed": true,
+              "PartitionToggle": false
+            }
+          ],
+          "ProjectorCount": 3,
+          "projectorData": [
+            {
+              "ImageVis": false,
+              "ProjectorToggle": false
+            },
+            {
+              "ImageVis": false,
+              "ProjectorToggle": false
+            },
+            {
+              "ImageVis": false,
+              "ProjectorToggle": false
+            }
+          ],
+          "isLogoVisibile": true,
+          "isDimensionVisible": true
+        },
+        "createdTextLabels": [],
+        "createdImageLabels": [],
+        "createdObjectProps": [
+          {
+            "Object_Name": "Halfmoon_6ft_6 0",
+            "Object_CustomObject_Data": "",
+            "Object_CustomObject_WxH": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_CustomObject_MainSize": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_fontValue": "",
+            "StreamingData_fontAssetName": "",
+            "StreamingData_fontAssetData": "",
+            "StreamingData_BaseObjectImage": "",
+            "StreamingData_BaseObjectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopImageData": "",
+            "StreamingData_TableTopAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectImageData": "",
+            "StreamingData_SelectAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_BaseObject_Name": "6ft Halfmoon",
+            "Object_BaseObject_SubName": "",
+            "Object_BaseObject_isCustom": false,
+            "Object_BaseObject_NumberOfChairs": 6,
+            "Object_PreFabName": "Halfmoon_6ft_6",
+            "Object_PreFabContainer_Name": "halfmoon",
+            "Object_Position": {
+              "x": -185.55690002441406,
+              "y": 215.0145263671875,
+              "z": 0
+            },
+            "Object_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Object_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 0
+            },
+            "Object_WxH": {
+              "x": 113.35789489746094,
+              "y": 59.480743408203125
+            },
+            "Object_Icon_Color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "Object_Numbering_Active": false,
+            "Object_Numbering_Text": "0"
+          },
+          {
+            "Object_Name": "Halfmoon_6ft_6 1",
+            "Object_CustomObject_Data": "",
+            "Object_CustomObject_WxH": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_CustomObject_MainSize": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_fontValue": "",
+            "StreamingData_fontAssetName": "",
+            "StreamingData_fontAssetData": "",
+            "StreamingData_BaseObjectImage": "",
+            "StreamingData_BaseObjectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopImageData": "",
+            "StreamingData_TableTopAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectImageData": "",
+            "StreamingData_SelectAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_BaseObject_Name": "6ft Halfmoon",
+            "Object_BaseObject_SubName": "",
+            "Object_BaseObject_isCustom": false,
+            "Object_BaseObject_NumberOfChairs": 6,
+            "Object_PreFabName": "Halfmoon_6ft_6",
+            "Object_PreFabContainer_Name": "halfmoon",
+            "Object_Position": {
+              "x": -185.55690002441406,
+              "y": 132.5682373046875,
+              "z": 0
+            },
+            "Object_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Object_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "Object_WxH": {
+              "x": 113.35789489746094,
+              "y": 59.480743408203125
+            },
+            "Object_Icon_Color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "Object_Numbering_Active": false,
+            "Object_Numbering_Text": "0"
+          },
+          {
+            "Object_Name": "Halfmoon_6ft_6 2",
+            "Object_CustomObject_Data": "",
+            "Object_CustomObject_WxH": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_CustomObject_MainSize": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_fontValue": "",
+            "StreamingData_fontAssetName": "",
+            "StreamingData_fontAssetData": "",
+            "StreamingData_BaseObjectImage": "",
+            "StreamingData_BaseObjectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopImageData": "",
+            "StreamingData_TableTopAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectImageData": "",
+            "StreamingData_SelectAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_BaseObject_Name": "6ft Halfmoon",
+            "Object_BaseObject_SubName": "",
+            "Object_BaseObject_isCustom": false,
+            "Object_BaseObject_NumberOfChairs": 6,
+            "Object_PreFabName": "Halfmoon_6ft_6",
+            "Object_PreFabContainer_Name": "halfmoon",
+            "Object_Position": {
+              "x": -185.55690002441406,
+              "y": 50.12195587158203,
+              "z": 0
+            },
+            "Object_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Object_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "Object_WxH": {
+              "x": 113.35789489746094,
+              "y": 59.480743408203125
+            },
+            "Object_Icon_Color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "Object_Numbering_Active": false,
+            "Object_Numbering_Text": "0"
+          },
+          {
+            "Object_Name": "Halfmoon_6ft_6 3",
+            "Object_CustomObject_Data": "",
+            "Object_CustomObject_WxH": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_CustomObject_MainSize": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_fontValue": "",
+            "StreamingData_fontAssetName": "",
+            "StreamingData_fontAssetData": "",
+            "StreamingData_BaseObjectImage": "",
+            "StreamingData_BaseObjectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopImageData": "",
+            "StreamingData_TableTopAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectImageData": "",
+            "StreamingData_SelectAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_BaseObject_Name": "6ft Halfmoon",
+            "Object_BaseObject_SubName": "",
+            "Object_BaseObject_isCustom": false,
+            "Object_BaseObject_NumberOfChairs": 6,
+            "Object_PreFabName": "Halfmoon_6ft_6",
+            "Object_PreFabContainer_Name": "halfmoon",
+            "Object_Position": {
+              "x": -185.55690002441406,
+              "y": -32.32432556152344,
+              "z": 0
+            },
+            "Object_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Object_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "Object_WxH": {
+              "x": 113.35789489746094,
+              "y": 59.480743408203125
+            },
+            "Object_Icon_Color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "Object_Numbering_Active": false,
+            "Object_Numbering_Text": "0"
+          },
+          {
+            "Object_Name": "Halfmoon_6ft_6 4",
+            "Object_CustomObject_Data": "",
+            "Object_CustomObject_WxH": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_CustomObject_MainSize": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_fontValue": "",
+            "StreamingData_fontAssetName": "",
+            "StreamingData_fontAssetData": "",
+            "StreamingData_BaseObjectImage": "",
+            "StreamingData_BaseObjectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopImageData": "",
+            "StreamingData_TableTopAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectImageData": "",
+            "StreamingData_SelectAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_BaseObject_Name": "6ft Halfmoon",
+            "Object_BaseObject_SubName": "",
+            "Object_BaseObject_isCustom": false,
+            "Object_BaseObject_NumberOfChairs": 6,
+            "Object_PreFabName": "Halfmoon_6ft_6",
+            "Object_PreFabContainer_Name": "halfmoon",
+            "Object_Position": {
+              "x": -185.55690002441406,
+              "y": -114.7706069946289,
+              "z": 0
+            },
+            "Object_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Object_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "Object_WxH": {
+              "x": 113.35789489746094,
+              "y": 59.480743408203125
+            },
+            "Object_Icon_Color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "Object_Numbering_Active": false,
+            "Object_Numbering_Text": "0"
+          },
+          {
+            "Object_Name": "Halfmoon_6ft_6 5",
+            "Object_CustomObject_Data": "",
+            "Object_CustomObject_WxH": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_CustomObject_MainSize": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_fontValue": "",
+            "StreamingData_fontAssetName": "",
+            "StreamingData_fontAssetData": "",
+            "StreamingData_BaseObjectImage": "",
+            "StreamingData_BaseObjectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopImageData": "",
+            "StreamingData_TableTopAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectImageData": "",
+            "StreamingData_SelectAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_BaseObject_Name": "6ft Halfmoon",
+            "Object_BaseObject_SubName": "",
+            "Object_BaseObject_isCustom": false,
+            "Object_BaseObject_NumberOfChairs": 6,
+            "Object_PreFabName": "Halfmoon_6ft_6",
+            "Object_PreFabContainer_Name": "halfmoon",
+            "Object_Position": {
+              "x": -49.23346710205078,
+              "y": 215.0145263671875,
+              "z": 0
+            },
+            "Object_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Object_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "Object_WxH": {
+              "x": 113.35789489746094,
+              "y": 59.480743408203125
+            },
+            "Object_Icon_Color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "Object_Numbering_Active": false,
+            "Object_Numbering_Text": "0"
+          },
+          {
+            "Object_Name": "Halfmoon_6ft_6 6",
+            "Object_CustomObject_Data": "",
+            "Object_CustomObject_WxH": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_CustomObject_MainSize": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_fontValue": "",
+            "StreamingData_fontAssetName": "",
+            "StreamingData_fontAssetData": "",
+            "StreamingData_BaseObjectImage": "",
+            "StreamingData_BaseObjectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopImageData": "",
+            "StreamingData_TableTopAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectImageData": "",
+            "StreamingData_SelectAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_BaseObject_Name": "6ft Halfmoon",
+            "Object_BaseObject_SubName": "",
+            "Object_BaseObject_isCustom": false,
+            "Object_BaseObject_NumberOfChairs": 6,
+            "Object_PreFabName": "Halfmoon_6ft_6",
+            "Object_PreFabContainer_Name": "halfmoon",
+            "Object_Position": {
+              "x": -49.23346710205078,
+              "y": 132.5682373046875,
+              "z": 0
+            },
+            "Object_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Object_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "Object_WxH": {
+              "x": 113.35789489746094,
+              "y": 59.480743408203125
+            },
+            "Object_Icon_Color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "Object_Numbering_Active": false,
+            "Object_Numbering_Text": "0"
+          },
+          {
+            "Object_Name": "Halfmoon_6ft_6 7",
+            "Object_CustomObject_Data": "",
+            "Object_CustomObject_WxH": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_CustomObject_MainSize": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_fontValue": "",
+            "StreamingData_fontAssetName": "",
+            "StreamingData_fontAssetData": "",
+            "StreamingData_BaseObjectImage": "",
+            "StreamingData_BaseObjectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopImageData": "",
+            "StreamingData_TableTopAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_TableTopWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectImageData": "",
+            "StreamingData_SelectAnchorMin": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectAnchorMax": {
+              "x": 0,
+              "y": 0
+            },
+            "StreamingData_SelectWxL": {
+              "x": 0,
+              "y": 0
+            },
+            "Object_BaseObject_Name": "6ft Halfmoon",
+            "Object_BaseObject_SubName": "",
+            "Object_BaseObject_isCustom": false,
+            "Object_BaseObject_NumberOfChairs": 6,
+            "Object_PreFabName": "Halfmoon_6ft_6",
+            "Object_PreFabContainer_Name": "halfmoon",
+            "Object_Position": {
+              "x": -49.23346710205078,
+              "y": 50.12195587158203,
+              "z": 0
+            },
+            "Object_Rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "Object_Scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "Object_WxH": {
+              "x": 113.35789489746094,
+              "y": 59.480743408203125
+            },
+            "Object_Icon_Color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "Object_Numbering_Active": false,
+            "Object_Numbering_Text": "0"
+          }
+        ],
+        "createdDimensions": [],
+        "createdLineObjects": [],
+        "createdRectangleObjects": [],
+        "createdEllipseObjects": []
+      }
+    }
+  ]
+}
