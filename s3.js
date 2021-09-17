@@ -277,9 +277,9 @@ app.get('/event-name/:eventId', (req, res) => {
 // Create a new document
 app.post('/create-event', (req, res) =>{
   console.log("Creating new event");
-  
+
   // merge document with the JSON document that has been posted
-  var document =  req.body
+  var document = req.body
   if (!("id" in document)){
     document.id = uuidv4()
   }
@@ -295,7 +295,7 @@ app.post('/create-event', (req, res) =>{
           res.send("Failed")
       } else {
           console.log("Added item:", JSON.stringify(data, null, 2));
-          res.send("Success")
+          res.send("Successfully added item with ID " + document.id)
       }
   });
 });
