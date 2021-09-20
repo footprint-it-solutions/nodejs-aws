@@ -410,16 +410,16 @@ app.post('/update-scene-name', (req, res) => {
 
 // Updates array in document
 app.post('/update-partition-data', (req, res) => {
-  console.log("Updating attribute")
+  console.log("Updating array")
 
   var params = {
     TableName : "events",
     Key: {
      "id" : req.body.EventId
     },
-    UpdateExpression : "set LayoutData[" + req.body.LayoutDataIndex + "].PartitionData[" + req.body.PartitionDataIndex + "].PartitionDataArray = :pa",
+    UpdateExpression : "set LayoutData[" + req.body.LayoutDataIndex + "].SceneData.SettingProperties.partitionData = :pd",
     ExpressionAttributeValues : {
-    ":pa" : req.body.partitionDataArray
+    ":pd" : req.body.partitionData
     },
     ReturnValues : "NONE"
   };
