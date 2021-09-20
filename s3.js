@@ -465,12 +465,17 @@ app.post('/delete-partition-data', (req, res)=>{
   var params = {
       TableName : "events",
       Key: {
-        "id": req.body.EventId.LayoutData[req.body.LayoutDataIndex].LayoutName.SceneData.SettingProperties.partitionData[req.body.partitionDataIndex]
-      }
+        "id": req.body.EventId
+      },
+      UpdateExpression: "set LayoutData[" + req.body.LayoutDataIndex + "].SceneData.SettingProperties.partitionData[" + req.body.partitionDataIndex + "] = :pd",
+      ExpressionAttributeValues: {
+        ":pd": null
+      },
+      ReturnValues: "NONE"
   };
 
   console.log("Attempting to delete partition data...");
-  docClient.delete(params, function(err, data) {
+  docClient.update(params, function(err, data) {
     if (err) {
         console.error("Unable to delete partition data. Error JSON:", JSON.stringify(err, null, 2));
         res.send("Failed")
