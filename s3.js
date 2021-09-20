@@ -453,7 +453,7 @@ app.post('/delete-event', (req, res)=>{
         res.send("Failed")
     } else {
         console.log("Delete document succeeded:", JSON.stringify(data, null, 2));
-        res.send("Success")
+        res.send("Successfully  deleted document with ID " + req.body.EventId)
     }
   });
 });
@@ -481,7 +481,7 @@ app.post('/delete-partition-data', (req, res)=>{
         res.send("Failed")
     } else {
         console.log("delete partition data succeeded:", JSON.stringify(data, null, 2));
-        res.send("Success")
+        res.send("Successfully  deleted an array in document with ID " + req.body.EventId)
     }
   });
 });
