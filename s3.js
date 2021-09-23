@@ -485,3 +485,46 @@ app.post('/delete-partition-data', (req, res)=>{
     }
   });
 });
+
+// Get's the document and then post it with a new event ID
+app.post('/duplicate/:eventId', (req, res) => {
+  console.log("Duplicate event");
+
+
+  var params = {
+      TableName : "events",
+      KeyConditionExpression: "id = :id",
+      ExpressionAttributeValues: {
+        ":id": req.params.eventId
+      }
+  };
+
+  docClient.query(params, function(err, data) {
+      if (err) {
+          console.error("Unable to query. Error:", JSON.stringify(err, null, 2));
+      } else {
+          console.log("Query succeeded.");
+          var document = data.Items[0]
+          document.id = uuidv4()
+          console.log("Adding a new event...");
+          var params = {
+            TableName : "events",
+            Item: document
+          }
+          docClient.put(params, function(err, data) {
+              if (err) {
+                  console.error("Unable to add event. Error JSON:", JSON.stringify(err, null, 2));
+                  res.send("Failed")
+              } else {
+                  console.log("Added item:", JSON.stringify(data, null, 2));
+                  res.send("Successfully added item with ID " + document.id)
+              }
+          });
+
+          let startHTML = "<html><body>";
+          let endHTML = "</body></html>";
+          let html = startHTML + document.id + endHTML;
+          res.send(html)
+      }
+  });
+});
