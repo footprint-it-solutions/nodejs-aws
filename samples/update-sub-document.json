@@ -1,0 +1,10 @@
+{
+  "EventId": " ",
+  "LayoutDataIndex": 0,
+  "LayoutDataObject": {
+    "LayoutName": "foo",
+    "CurrentSceneName": "bar",
+    "SceneNameSubtitle": "foo\n<size=10%>\n<size=80%>bar</size>",
+    "SceneAddress": "foo/00_Main/Scenes/Rooms/133_Houndsditch/2nd/bar.unity"
+  }
+}

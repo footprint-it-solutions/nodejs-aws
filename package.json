@@ -5,13 +5,13 @@
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "express-fileupload": "^1.2.1",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "uuid": "^8.3.2"
   },
   "name": "nodejs-aws",
   "description": "## Files: * s3.js - Sample application using Express to expose routes that use the S3 APIs server-side.",
   "version": "1.0.0",
   "main": "s3.js",
-  "devDependencies": {},
   "scripts": {
     "start": "node s3.js",
     "test": "echo \"Error: no test specified\" && exit 1"

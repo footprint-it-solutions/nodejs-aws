@@ -33,6 +33,7 @@ The application listens on http://localhost:8080 - the command to start the app 
 
 ### Deploying the application in [Elastic Beanstalk](https://github.com/footprintmediaits/nodejs-aws/blob/main/EB.md)
 
+### Integrating [DynamoDB](https://github.com/footprintmediaits/nodejs-aws/blob/main/DynamoDB.md) with Node.JS
 ## Further reading
 
 * https://aws.amazon.com/sdk-for-javascript/

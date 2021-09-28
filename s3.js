@@ -5,10 +5,15 @@ const express = require('express');
 const fileUpload = require('express-fileupload');
 const fs = require('fs')
 const morgan = require('morgan');
+const { eventNames } = require('process');
 const { callbackify } = require('util');
+const {
+  v4: uuidv4,
+} = require('uuid');
 const PORT = process.env.PORT || 8080;
 const app = express();
-
+app.use(express.json({limit: '50mb'}));
+app.use(express.urlencoded({limit: '50mb', extended: true, parameterLimit: 50000}));
 // Enable files upload
 app.use(fileUpload({
   createParentPath: true
@@ -201,3 +206,322 @@ app.get('/upload-presigned-images/:imageId', (req, res) => {
   let html = startHTML + url + endHTML;
   res.send(html)
 })
+
+AWS.config.update({
+  region: "eu-west-1"
+});
+
+/*
+ Start of DynamoDB code
+*/
+
+// Create a new document
+app.post('/create-event', (req, res) =>{
+  console.log("Creating new event");
+
+  // merge document with the JSON document that has been posted
+  var document = req.body
+  if (!("id" in document)){
+    document.id = uuidv4()
+  }
+
+  var params = {
+      TableName : "events",
+      Item: document
+  };
+  console.log("Adding a new event...");
+  docClient.put(params, function(err, data) {
+      if (err) {
+          console.error("Unable to add event. Error JSON:", JSON.stringify(err, null, 2));
+          res.send("Failed")
+      } else {
+          console.log("Added item:", JSON.stringify(data, null, 2));
+          res.send("Successfully added item with ID " + document.id)
+      }
+  });
+});
+
+let docClient = new AWS.DynamoDB.DocumentClient();
+// Retrieve the whole document
+app.get('/event/:eventId', (req, res) => {
+  console.log("Querying for IDs");
+
+  var params = {
+      TableName : "events",
+      KeyConditionExpression: "id = :id",
+      ExpressionAttributeValues: {
+        ":id": req.params.eventId
+      }
+  };
+
+  docClient.query(params, function(err, data) {
+      if (err) {
+          console.error("Unable to query. Error:", JSON.stringify(err, null, 2));
+      } else {
+          console.log("Query succeeded.");
+          data.Items.forEach(function(item) {
+              console.log(" -", item.EventName);
+          });
+          let startHTML = "<html><body>";
+          let endHTML = "</body></html>";
+          let html = startHTML + data.Items[0].id + endHTML;
+          res.send(html)
+      }
+  });
+});
+
+
+// Retrieve selected elements of the document
+app.get('/event-name/:eventId', (req, res) => {
+  console.log("Querying for IDs");
+
+  var params = {
+      TableName : "events",
+      KeyConditionExpression: "id = :id",
+      ExpressionAttributeValues: {
+        ":id": req.params.eventId
+      },
+      ProjectionExpression: "EventName"
+  };
+
+  docClient.query(params, function(err, data) {
+      if (err) {
+          console.error("Unable to query. Error:", JSON.stringify(err, null, 2));
+      } else {
+          console.log("Query succeeded.");
+          data.Items.forEach(function(item) {
+              console.log(" -", item.EventName);
+          });
+          let startHTML = "<html><body>";
+          let endHTML = "</body></html>";
+          let html = startHTML + data.Items[0].EventName + endHTML;
+          res.send(html)
+      }
+  });
+});
+
+// Update an existing document
+app.post('/update-event', (req, res) =>{
+  console.log("Updating event");
+
+  var params = {
+      TableName : "events",
+      Key: {
+        "id" : req.body.id
+      },
+      UpdateExpression: "set " + req.body.UpdateExpression + " = :ld",
+      ExpressionAttributeValues:{
+       ":ld" : req.body.Value
+      },
+      ReturnValues:"NONE"
+  };
+  console.log("Updating the event...");
+  docClient.update(params, function(err, data) {
+      if (err) {
+          console.error("Unable to update item. Error JSON:", JSON.stringify(err, null, 2));
+          res.send("Failed")
+      } else {
+          console.log("Successfully updated item:", JSON.stringify(data, null, 2));
+          res.send("Success")
+      }
+  });
+});
+
+// Update the entire sub-document
+app.post('/update-sub-document', (req, res) =>{
+  console.log("Updating entire sub-document")
+
+  var params = {
+    TableName : "events",
+    Key: {
+     "id" : req.body.EventId
+    },
+    UpdateExpression : "set LayoutData[" + req.body.LayoutDataIndex +  "].LayoutObject = :lo",
+    ExpressionAttributeValues : {
+    ":lo" : req.body.LayoutDataObject
+    },
+    ReturnValues : "NONE"
+  };
+  console.log("Updating sub-document...");
+  docClient.update(params, function(err, data) {
+      if (err) {
+          console.error("Unable to update sub-document. Error JSON:", JSON.stringify(err, null, 2));
+          res.send("Failed")
+      } else {
+          console.log("Successfully updated sub-document:", JSON.stringify(data, null, 2));
+          res.send("Success")
+      }
+  });
+});
+
+// Update the document attribute
+app.post('/update-layout-name', (req, res) => {
+  console.log("Updating attribute")
+
+  var params = {
+    TableName : "events",
+    Key : {
+     "id" : req.body.EventId
+    },
+    UpdateExpression : "set LayoutData[" + req.body.LayoutDataIndex + "].LayoutName = :ln",
+    ExpressionAttributeValues : {
+    ":ln" : req.body.LayoutName
+    },
+    ReturnValues : "NONE"
+  };
+  console.log("Updating layout name...");
+  docClient.update(params, function(err, data) {
+      if (err) {
+          console.error("Unable to update layout name. Error JSON:", JSON.stringify(err, null, 2));
+          res.send("Failed")
+      } else {
+          console.log("Successfully updated layout name:", JSON.stringify(data, null, 2));
+          res.send("Successfully  updated layout name in ID " + req.body.EventId)
+      }
+  });
+});
+
+// Update the document attribute
+app.post('/update-scene-name', (req, res) => {
+  console.log("Updating scene name")
+
+  var params = {
+    TableName : "events",
+    Key: {
+     "id" : req.body.EventId
+    },
+    UpdateExpression : "set LayoutData[" + req.body.LayoutDataIndex + "].SceneData.SceneName = :sn",
+    ExpressionAttributeValues : {
+    ":sn" : req.body.SceneName
+    },
+    ReturnValues : "NONE"
+  };
+  console.log("Updating Scene name...");
+  docClient.update(params, function(err, data) {
+      if (err) {
+          console.error("Unable to update scene name. Error JSON:", JSON.stringify(err, null, 2));
+          res.send("Failed")
+      } else {
+          console.log("Successfully updated scene name:", JSON.stringify(data, null, 2));
+          res.send("Successfully  updated scene name in ID " + req.body.EventId)
+      }
+  });
+});
+
+// Update an array in the document
+app.post('/update-partition-data', (req, res) => {
+  console.log("Updating array")
+
+  var params = {
+    TableName : "events",
+    Key: {
+     "id" : req.body.EventId
+    },
+    UpdateExpression : "set LayoutData[" + req.body.LayoutDataIndex + "].SceneData.SettingProperties.partitionData = :pd",
+    ExpressionAttributeValues : {
+    ":pd" : req.body.partitionData
+    },
+    ReturnValues : "NONE"
+  };
+  console.log("Updating array...");
+  docClient.update(params, function(err, data) {
+      if (err) {
+          console.error("Unable to update partition data. Error JSON:", JSON.stringify(err, null, 2));
+          res.send("Failed")
+      } else {
+          console.log("Successfully updated partition data:", JSON.stringify(data, null, 2));
+          res.send("Successfully  updated partition data in ID " + req.body.EventId)
+      }
+  });
+});
+
+// Get the document and then post it with a new event ID
+app.post('/duplicate/:eventId', (req, res) => {
+  console.log("Duplicate event");
+
+  var params = {
+      TableName : "events",
+      KeyConditionExpression: "id = :id",
+      ExpressionAttributeValues: {
+        ":id": req.params.eventId
+      }
+  };
+
+  docClient.query(params, function(err, data) {
+      if (err) {
+          console.error("Unable to query. Error:", JSON.stringify(err, null, 2));
+      } else {
+          console.log("Query succeeded.");
+          var document = data.Items[0]
+          document.id = uuidv4()
+          console.log("Adding a new event...");
+          var params = {
+            TableName : "events",
+            Item: document
+          }
+          docClient.put(params, function(err, data) {
+              if (err) {
+                  console.error("Unable to add event. Error JSON:", JSON.stringify(err, null, 2));
+                  res.send("Failed")
+              } else {
+                  console.log("Added item:", JSON.stringify(data, null, 2));
+                  let startHTML = "<html><body>";
+                  let endHTML = "</body></html>";
+                  let html = startHTML + "Successfully added item with ID " + document.id + endHTML;
+                  res.send(html)
+              }
+          });
+      }
+  });
+});
+
+// Delete an item from the array in the document
+app.post('/delete-partition-data', (req, res)=>{
+  console.log("deleting partition data");
+
+  var params = {
+      TableName : "events",
+      Key: {
+        "id": req.body.EventId
+      },
+      UpdateExpression: "set LayoutData[" + req.body.LayoutDataIndex + "].SceneData.SettingProperties.partitionData[" + req.body.partitionDataIndex + "] = :pd",
+      ExpressionAttributeValues: {
+        ":pd": null
+      },
+      ReturnValues: "NONE"
+  };
+
+  console.log("Attempting to delete partition data...");
+  docClient.update(params, function(err, data) {
+    if (err) {
+        console.error("Unable to delete partition data. Error JSON:", JSON.stringify(err, null, 2));
+        res.send("Failed")
+    } else {
+        console.log("delete partition data succeeded:", JSON.stringify(data, null, 2));
+        res.send("Successfully  deleted an array in document with ID " + req.body.EventId)
+    }
+  });
+});
+
+// Delete the whole document
+app.post('/delete-event', (req, res)=>{
+  console.log("Deleting event");
+
+  var params = {
+      TableName : "events",
+      Key: {
+        "id": req.body.EventId
+      }
+  };
+
+  console.log("Attempting to delete the whole document...");
+  docClient.delete(params, function(err, data) {
+    if (err) {
+        console.error("Unable to delete the document. Error JSON:", JSON.stringify(err, null, 2));
+        res.send("Failed")
+    } else {
+        console.log("Delete document succeeded:", JSON.stringify(data, null, 2));
+        res.send("Successfully  deleted document with ID " + req.body.EventId)
+    }
+  });
+});
