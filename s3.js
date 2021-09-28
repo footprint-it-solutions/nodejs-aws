@@ -215,8 +215,34 @@ AWS.config.update({
  Start of DynamoDB code
 */
 
+// Create a new document
+app.post('/create-event', (req, res) =>{
+  console.log("Creating new event");
+
+  // merge document with the JSON document that has been posted
+  var document = req.body
+  if (!("id" in document)){
+    document.id = uuidv4()
+  }
+
+  var params = {
+      TableName : "events",
+      Item: document
+  };
+  console.log("Adding a new event...");
+  docClient.put(params, function(err, data) {
+      if (err) {
+          console.error("Unable to add event. Error JSON:", JSON.stringify(err, null, 2));
+          res.send("Failed")
+      } else {
+          console.log("Added item:", JSON.stringify(data, null, 2));
+          res.send("Successfully added item with ID " + document.id)
+      }
+  });
+});
+
 let docClient = new AWS.DynamoDB.DocumentClient();
-// Retrieve whole document
+// Retrieve the whole document
 app.get('/event/:eventId', (req, res) => {
   console.log("Querying for IDs");
 
@@ -274,32 +300,6 @@ app.get('/event-name/:eventId', (req, res) => {
   });
 });
 
-// Create a new document
-app.post('/create-event', (req, res) =>{
-  console.log("Creating new event");
-
-  // merge document with the JSON document that has been posted
-  var document = req.body
-  if (!("id" in document)){
-    document.id = uuidv4()
-  }
-
-  var params = {
-      TableName : "events",
-      Item: document
-  };
-  console.log("Adding a new event...");
-  docClient.put(params, function(err, data) {
-      if (err) {
-          console.error("Unable to add event. Error JSON:", JSON.stringify(err, null, 2));
-          res.send("Failed")
-      } else {
-          console.log("Added item:", JSON.stringify(data, null, 2));
-          res.send("Successfully added item with ID " + document.id)
-      }
-  });
-});
-
 // Update an existing document
 app.post('/update-event', (req, res) =>{
   console.log("Updating event");
@@ -327,7 +327,7 @@ app.post('/update-event', (req, res) =>{
   });
 });
 
-// Updates the entire sub-document
+// Update the entire sub-document
 app.post('/update-sub-document', (req, res) =>{
   console.log("Updating entire sub-document")
 
@@ -354,7 +354,7 @@ app.post('/update-sub-document', (req, res) =>{
   });
 });
 
-// Updates document attribute
+// Update the document attribute
 app.post('/update-layout-name', (req, res) => {
   console.log("Updating attribute")
 
@@ -381,7 +381,7 @@ app.post('/update-layout-name', (req, res) => {
   });
 });
 
-// Updates document attribute
+// Update the document attribute
 app.post('/update-scene-name', (req, res) => {
   console.log("Updating scene name")
 
@@ -408,7 +408,7 @@ app.post('/update-scene-name', (req, res) => {
   });
 });
 
-// Updates array in document
+// Update an array in the document
 app.post('/update-partition-data', (req, res) => {
   console.log("Updating array")
 
@@ -435,61 +435,9 @@ app.post('/update-partition-data', (req, res) => {
   });
 });
 
-// Delete the whole document
-app.post('/delete-event', (req, res)=>{
-  console.log("Deleting event");
-
-  var params = {
-      TableName : "events",
-      Key: {
-        "id": req.body.EventId
-      }
-  };
-
-  console.log("Attempting to delete the whole document...");
-  docClient.delete(params, function(err, data) {
-    if (err) {
-        console.error("Unable to delete the document. Error JSON:", JSON.stringify(err, null, 2));
-        res.send("Failed")
-    } else {
-        console.log("Delete document succeeded:", JSON.stringify(data, null, 2));
-        res.send("Successfully  deleted document with ID " + req.body.EventId)
-    }
-  });
-});
-
-// Deletes item from array in document
-app.post('/delete-partition-data', (req, res)=>{
-  console.log("deleting partition data");
-
-  var params = {
-      TableName : "events",
-      Key: {
-        "id": req.body.EventId
-      },
-      UpdateExpression: "set LayoutData[" + req.body.LayoutDataIndex + "].SceneData.SettingProperties.partitionData[" + req.body.partitionDataIndex + "] = :pd",
-      ExpressionAttributeValues: {
-        ":pd": null
-      },
-      ReturnValues: "NONE"
-  };
-
-  console.log("Attempting to delete partition data...");
-  docClient.update(params, function(err, data) {
-    if (err) {
-        console.error("Unable to delete partition data. Error JSON:", JSON.stringify(err, null, 2));
-        res.send("Failed")
-    } else {
-        console.log("delete partition data succeeded:", JSON.stringify(data, null, 2));
-        res.send("Successfully  deleted an array in document with ID " + req.body.EventId)
-    }
-  });
-});
-
-// Get's the document and then post it with a new event ID
+// Get the document and then post it with a new event ID
 app.post('/duplicate/:eventId', (req, res) => {
   console.log("Duplicate event");
-
 
   var params = {
       TableName : "events",
@@ -517,14 +465,63 @@ app.post('/duplicate/:eventId', (req, res) => {
                   res.send("Failed")
               } else {
                   console.log("Added item:", JSON.stringify(data, null, 2));
-                  res.send("Successfully added item with ID " + document.id)
+                  let startHTML = "<html><body>";
+                  let endHTML = "</body></html>";
+                  let html = startHTML + "Successfully added item with ID " + document.id + endHTML;
+                  res.send(html)
               }
           });
-
-          let startHTML = "<html><body>";
-          let endHTML = "</body></html>";
-          let html = startHTML + document.id + endHTML;
-          res.send(html)
       }
+  });
+});
+
+// Delete an item from the array in the document
+app.post('/delete-partition-data', (req, res)=>{
+  console.log("deleting partition data");
+
+  var params = {
+      TableName : "events",
+      Key: {
+        "id": req.body.EventId
+      },
+      UpdateExpression: "set LayoutData[" + req.body.LayoutDataIndex + "].SceneData.SettingProperties.partitionData[" + req.body.partitionDataIndex + "] = :pd",
+      ExpressionAttributeValues: {
+        ":pd": null
+      },
+      ReturnValues: "NONE"
+  };
+
+  console.log("Attempting to delete partition data...");
+  docClient.update(params, function(err, data) {
+    if (err) {
+        console.error("Unable to delete partition data. Error JSON:", JSON.stringify(err, null, 2));
+        res.send("Failed")
+    } else {
+        console.log("delete partition data succeeded:", JSON.stringify(data, null, 2));
+        res.send("Successfully  deleted an array in document with ID " + req.body.EventId)
+    }
+  });
+});
+
+// Delete the whole document
+app.post('/delete-event', (req, res)=>{
+  console.log("Deleting event");
+
+  var params = {
+      TableName : "events",
+      Key: {
+        "id": req.body.EventId
+      }
+  };
+
+  console.log("Attempting to delete the whole document...");
+  docClient.delete(params, function(err, data) {
+    if (err) {
+        console.error("Unable to delete the document. Error JSON:", JSON.stringify(err, null, 2));
+        res.send("Failed")
+    } else {
+        console.log("Delete document succeeded:", JSON.stringify(data, null, 2));
+        res.send("Successfully  deleted document with ID " + req.body.EventId)
+    }
   });
 });
