@@ -1,0 +1,10 @@
+---
+version: 2
+updates:
+  # Enable version updates for Docker
+  - package-ecosystem: "npm"
+    # Double asterisks to include all subdirectories
+    directory: "/**"
+    # Check for updates once a week
+    schedule:
+      interval: "daily"
